@@ -28,7 +28,8 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         }
         //4 if found write some statistic
         // sooom
-        // srooom
+        // sraaam
+
     }
 
     public WordUniqueForm createNewWordUniqueForm(String word) {
