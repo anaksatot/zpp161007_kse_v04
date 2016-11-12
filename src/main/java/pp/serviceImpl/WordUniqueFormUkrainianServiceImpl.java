@@ -27,6 +27,7 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
             e.printStackTrace();
         }
         //4 if found write some statistic
+        // sooom
     }
 
     public WordUniqueForm createNewWordUniqueForm(String word) {
