@@ -28,6 +28,7 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         }
         //4 if found write some statistic
         // sooom
+        // srooom
     }
 
     public WordUniqueForm createNewWordUniqueForm(String word) {
@@ -35,7 +36,7 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         ArrayList<LinguisticCategory> linguisticCategoriesOfWordUniqueForm = new ArrayList<LinguisticCategory>();
         Scanner scanner2 = new Scanner(System.in);
         listOfLinguisticCategory();
-        int i = 0,n;
+        int n;
             System.out.println("Введіть позицію частини мови до якої належить слово!");
             n = scanner2.nextInt();
             switch (n) {
@@ -48,9 +49,8 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
                 default:
                     System.out.println("Введіть коректний номер!");
             }
-            i = i+1;
         WordUniqueForm.setLinguisticCategoryForms(new LinguisticCategoryForms(linguisticCategoriesOfWordUniqueForm));
-        //System.out.println(WordUniqueForm);
+        System.out.println(WordUniqueForm);
         return WordUniqueForm;
     }
 
@@ -68,9 +68,9 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
     }
 
 public void safeOfNewWordUniqueFormInIndividualFile(WordUniqueForm WordUniqueForm) throws ParseException {
-
+    System.out.println(WordUniqueForm);
 //    String stForJSON;
-//    JSONParser parser = new JSONParser();
+    JSONParser parser = new JSONParser();
 //    stForJSON = WordUniqueForm.stringForJsonParser();
 //    JSONObject WordUniqueFormJSONObj = (JSONObject) parser.parse(stForJSON);
 //
