@@ -1,0 +1,5 @@
+package pp.entity;
+
+public enum LC {
+ADJECTIVE,ADVERB,CONJUNCTION,NOUN,PREPOSITION,PRONOUN,VERB;
+}
