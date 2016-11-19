@@ -1,18 +1,16 @@
 package pp.serviceImpl;
 
 import pp.entity.*;
-import pp.service.LcNounService;
 import pp.service.LcNounUkranianService;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 /**
  * Created by Admin on 07.11.2016.
  */
-public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
+class LcNounUkrainianServiceImpl implements LcNounUkranianService {
 
     public HashMap<NUMBER,String> defineSingularAndPluralForms(LcNounUkrainian lcNounUkrainian){
         System.out.println("Введіть число іменника "+lcNounUkrainian.getFormOfWord());
@@ -26,6 +24,7 @@ public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
         switch (n) {
             case 1:
                 singularOrPluralForms.put(NUMBER.SINGULAR, lcNounUkrainian.getFormOfWord());
+                System.out.println(lcNounUkrainian.getFormOfWord());
                 return singularOrPluralForms;
             case 2:
                  singularOrPluralForms.put(NUMBER.PLURAL, lcNounUkrainian.getFormOfWord());
@@ -135,48 +134,10 @@ public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
         return CasesOfNoun;
     }
 
-   // @Override
-    public String getStringOfNounForJsonParser(LcNounUkrainian lcNounUkrainian) {
-        String stForJsonParser; int k = 0;
-        stForJsonParser = "\""+"LcNounUkrainian"+"\""+":"+"{";
-        for (HashMap.Entry<NUMBER,String> singularOrPluralForm: lcNounUkrainian.getSingularOrPluralForms().entrySet()) {
-            stForJsonParser = stForJsonParser+"\""+singularOrPluralForm.getKey().toString()+"\""+":"+"\""+singularOrPluralForm.getValue()+"\"";
-            k = k + 1;
-            if (k != lcNounUkrainian.getSingularOrPluralForms().size()) {
-                stForJsonParser = stForJsonParser +",";
-            }
-        }
-        k = 0;
-        stForJsonParser = stForJsonParser +","+"\"" + "gender"+"\""+":"+"\""+ lcNounUkrainian.getGender().name()+"\""+",";
-        for (HashMap.Entry<CASE,String> caseOfWord: lcNounUkrainian.getCasesOfWord().entrySet()) {
-            stForJsonParser = stForJsonParser+"\""+caseOfWord.getKey().toString()+"\""+":"+"\""+caseOfWord.getValue()+"\"";
-            k = k + 1;
-            if (k != lcNounUkrainian.getCasesOfWord().size()) {
-                stForJsonParser = stForJsonParser +",";
-            }
-        }
-        stForJsonParser = stForJsonParser+"}";
-        System.out.println(stForJsonParser);
-        return stForJsonParser;
-    }
-
-//    @Override
-//    public void defineLcNounGrammarCategories(LcNoun noun) {
-//        defineSingularAndPluralForms();
-//        defineGender();
-//        defineCasesOfNoun(defineListOfCasesOfNoun());
-//    }
-//
-//    @Override
-//    public void defineLcNounGrammarCategoriesForUniqueFormOfWord(LcNoun noun) {
-//        defineSingularAndPluralFormsForUniqueForm();
-//        defineGender();
-//        defineCasesOfNounForUniqueForm(defineListOfCasesOfNoun());
-//    }
-
     @Override
     public LcNoun defineLcNoun(String word) {
         LcNounUkrainian lcNounUkrainian = new LcNounUkrainian(word);
+        // will be code for all forms
         return lcNounUkrainian;
     }
 
@@ -184,8 +145,9 @@ public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
     public LcNoun defineLcNounUniqueForm(String word) {
         LcNounUkrainian lcNounUkrainian = new LcNounUkrainian(word);
         lcNounUkrainian.setSingularOrPluralForms(defineSingularAndPluralFormsForUniqueForm(lcNounUkrainian));
+        lcNounUkrainian.setGender(defineGender());
+        lcNounUkrainian.setCasesOfWord(defineCasesOfNounForUniqueForm(lcNounUkrainian,defineListOfCasesOfNoun()));
         return lcNounUkrainian;
     }
-
 
 }

@@ -12,8 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //String pathToFile = "c:\\Nazar\\Java\\Hobbit 4.txt";
-        String pathToFile = "e:\\Hobbit 4.txt";
+        String pathToFile = "c:\\Nazar\\Java\\Hobbit 4.txt";
+     //   String pathToFile = "e:\\Hobbit 4.txt";
         LANGUAGE language = LANGUAGE.UKRAINIAN;
         TextFileImproveService textFileImprove = new TextFileImproveServiceImpl();
         if (textFileImprove.fileExist(pathToFile) && textFileImprove.fileIsGoodType(pathToFile)) {

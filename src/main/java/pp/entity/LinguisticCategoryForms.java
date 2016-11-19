@@ -16,11 +16,4 @@ public class LinguisticCategoryForms {
 		return isUniqueLinguisticCategorie;
 	}
 
-//	public String  getLinguisticCategoriesForJsonParser(){
-//		String stForJsonParser;
-//		stForJsonParser = "";
-//		for (LinguisticCategory lingCategory: linguisticCategory)
-//			stForJsonParser = stForJsonParser + lingCategory.getLCForJsonParser();
-//		return stForJsonParser;
-//	}
 }

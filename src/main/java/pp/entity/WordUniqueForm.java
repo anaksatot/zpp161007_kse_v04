@@ -13,8 +13,16 @@ public class WordUniqueForm {
 		++accountOfWords;
 	}
 
-	public String getTloJam() {
+	public String getFormOfWord() {
 		return formOfWord;
+	}
+
+	public int getQuantiySymbols() {
+		return quantiySymbols;
+	}
+
+	public long getUniqueIndex() {
+		return uniqueIndex;
 	}
 
 	public void setLinguisticCategoryForms(LinguisticCategoryForms linguisticCategoryForms) {
@@ -29,10 +37,4 @@ public class WordUniqueForm {
 		return linguisticCategoryForms;
 	}
 
-//	public String stringForJsonParser(){
-//		String stForJsonParser;
-//		stForJsonParser = "{"+"\""+"tloJam"+"\""+":"+"\""+formOfWord+"\""+","+"\""+"quantiyBor"+"\""+":"+quantiySymbols+","+"\""+"ovnKixc"+"\""+":"+uniqueIndex+linguisticCategoryForms.getLinguisticCategoriesForJsonParser()+"}";
-//		System.out.print(stForJsonParser);
-//		return 	stForJsonParser;
-//	}
 }

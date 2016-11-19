@@ -25,6 +25,5 @@ public abstract class LinguisticCategory {
 		this.linguisticCategoryEnum = linguisticCategoryEnum;
 		this.formOfWord = formOfWord;
 	}
-	// public abstract  String getLCForJsonParser();
-	// public abstract GENDER getGender();
+
 }

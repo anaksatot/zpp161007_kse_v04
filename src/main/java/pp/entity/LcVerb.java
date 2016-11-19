@@ -6,8 +6,7 @@ public class LcVerb extends LinguisticCategory{
 		super(LC.VERB);
 	}
 
-	//@Override
-	//public String getLCForJsonParser() {
-	//	return null;
-	//}
+	public LcVerb(String formOfWord) {
+		super(LC.NOUN, formOfWord);
+	}
 }

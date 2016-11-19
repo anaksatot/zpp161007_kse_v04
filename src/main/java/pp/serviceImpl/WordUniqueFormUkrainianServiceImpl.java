@@ -1,14 +1,11 @@
 package pp.serviceImpl;
 
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import pp.entity.*;
+import pp.entity.LinguisticCategory;
+import pp.entity.LinguisticCategoryForms;
+import pp.entity.WordUniqueForm;
 import pp.service.WordUniqueFormService;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -18,11 +15,9 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         //1 get all WordUniqueForm
         //2 try find
         //3 if not found interaction with human and create
-        //WordUniqueForm WordUniqueForm2 = new WordUniqueForm(tloJam);
-        //linguisticCategories = new WordUniqueFormUkranianServiceImpl().createNewWordUniqueForm(tloJam);
         WordUniqueForm WordUniqueForm = createNewWordUniqueForm(word);
         try {
-            safeOfNewWordUniqueFormInIndividualFile(WordUniqueForm);
+            new WordUniqueFormToFileWriteServiceImpl().writeToJSONfile(stringForJSONParser(WordUniqueForm),WordUniqueForm.getFormOfWord());
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -30,6 +25,19 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         // sooom
         // sraaam
 
+    }
+
+    public String stringForJSONParser(WordUniqueForm wordUniqueForm) {
+
+        String stForJsonParser = "{"+"\""+"formOfWord"+"\""+":"+"\""+wordUniqueForm.getFormOfWord()+"\""+","+"\""+"quantiySymbols"+"\""
+                +":"+wordUniqueForm.getQuantiySymbols()+","+"\""+"id"+"\""+":"+wordUniqueForm.getUniqueIndex();
+        String stForJsonParserLC = "";
+        		for (LinguisticCategory lingCategory: wordUniqueForm.getLinguisticCategoryForms().getLinguisticCategories()) {
+                    stForJsonParserLC = stForJsonParserLC + new LCForJSONImpl().getStringLCForJsonParser(lingCategory);
+                }
+            stForJsonParser = stForJsonParser +"," + stForJsonParserLC + "}";
+            System.out.println("string for JSON "+stForJsonParser);
+			return 	stForJsonParser;
     }
 
     public WordUniqueForm createNewWordUniqueForm(String word) {
@@ -45,7 +53,7 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
                     linguisticCategoriesOfWordUniqueForm.add(new LcNounUkrainianServiceImpl().defineLcNounUniqueForm(word));
                     break;
                 case 2:
-                    linguisticCategoriesOfWordUniqueForm.add(new LcVerb());
+                    linguisticCategoriesOfWordUniqueForm.add(new LcVerbUkrainianServiceImpl().defineLcVerbUniqueForm(word));
                     break;
                 default:
                     System.out.println("Введіть коректний номер!");
@@ -68,78 +76,5 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
 
     }
 
-public void safeOfNewWordUniqueFormInIndividualFile(WordUniqueForm WordUniqueForm) throws ParseException {
-    System.out.println(WordUniqueForm);
-//    String stForJSON;
-    JSONParser parser = new JSONParser();
-//    stForJSON = WordUniqueForm.stringForJsonParser();
-//    JSONObject WordUniqueFormJSONObj = (JSONObject) parser.parse(stForJSON);
-//
-//    try {
-//        // Writing to a file
-//        //
-//        //File file=new File("c:\\Nazar\\json-jamu\\"+WordUniqueForm.getTloJam()+".json");
-//        File file=new File("e:\\Develop\\json-jamu\\"+WordUniqueForm.getTloJam()+".json");
-//        file.createNewFile();
-//        FileWriter fileWriter = new FileWriter(file);
-//        System.out.println("Writing JSON object to file");
-//        System.out.println("-----------------------");
-//        System.out.print(WordUniqueFormJSONObj);
-//        fileWriter.write(WordUniqueFormJSONObj.toJSONString());
-//        fileWriter.flush();
-//        fileWriter.close();
-//    } catch (IOException e)
-//    {
-//        e.printStackTrace();
-//    }
-}
-    public void safeOfNewWordUniqueFormInIndividualFileOld(WordUniqueForm WordUniqueForm){
-        JSONObject WordUniqueFormJSONObj = new JSONObject();
-        JSONObject WordUniqueFormJSONObjLCforms = new JSONObject();
-        JSONObject WordUniqueFormJSONObjLC = new JSONObject();
-        WordUniqueFormJSONObj.put("tloJam", WordUniqueForm.getTloJam());
-        WordUniqueFormJSONObjLCforms.put("isUniqueLinguisticCategorie",WordUniqueForm.getLinguisticCategoryForms().isUniqueLinguisticCategorie());
-        //
-        ArrayList<LinguisticCategory> linguisticCategories = WordUniqueForm.getLinguisticCategoryForms().getLinguisticCategories();
-        // JSONArray listOfLinguisticCategories = new JSONArray();
-        for (LinguisticCategory lingCat:
-                linguisticCategories) {
-
-            WordUniqueFormJSONObjLC.put("LinguisticCategoryE",lingCat.getLinguisticCategoryE().toString());
-            //WordUniqueFormJSONObjLC.put("Gender",lingCat.getGender());
-
-
-            //
-        }
-
-        for (int k =0; k < linguisticCategories.size();k++) {
-            //WordUniqueFormJSONObjLC.put("LinguisticCategoryE",linguisticCategories.get(k).getClass().);
-            // WordUniqueFormJSONObjLC.put("Gender",lingCat.getGender());
-
-
-            //
-        }
-        System.out.println("llllp"+linguisticCategories.toString());
-
-        WordUniqueFormJSONObjLCforms.put("LinguisticCategoryForms",WordUniqueFormJSONObjLC);
-        WordUniqueFormJSONObj.put("LinguisticCategoryForms",WordUniqueFormJSONObjLCforms);
-        // WordUniqueFormJSONObj.put("States", listOfStates);
-        try {
-            // Writing to a file
-            //
-            File file=new File("E:\\Develop\\json-jamu\\"+WordUniqueForm.getTloJam()+".json");
-            file.createNewFile();
-            FileWriter fileWriter = new FileWriter(file);
-            System.out.println("Writing JSON object to file");
-            System.out.println("-----------------------");
-            System.out.print(WordUniqueFormJSONObj);
-            fileWriter.write(WordUniqueFormJSONObj.toJSONString());
-            fileWriter.flush();
-            fileWriter.close();
-        } catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
 
 }
