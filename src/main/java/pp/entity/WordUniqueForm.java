@@ -5,11 +5,13 @@ public class WordUniqueForm {
 	private String formOfWord;
 	private int quantiySymbols;
 	private long uniqueIndex;
+	private LANGUAGE language;
 	private LinguisticCategoryForms linguisticCategoryForms;
 	private static int accountOfWords;
 
-	public WordUniqueForm(String formOfWord) {
+	public WordUniqueForm(String formOfWord,LANGUAGE language) {
 		this.formOfWord = formOfWord;
+		this.language = language;
 		++accountOfWords;
 	}
 
@@ -23,6 +25,10 @@ public class WordUniqueForm {
 
 	public long getUniqueIndex() {
 		return uniqueIndex;
+	}
+
+	public LANGUAGE getLanguage() {
+		return language;
 	}
 
 	public void setLinguisticCategoryForms(LinguisticCategoryForms linguisticCategoryForms) {

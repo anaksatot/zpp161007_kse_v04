@@ -18,8 +18,8 @@ public class WordUniqueFormToFileWriteServiceImpl{
     try {
         // Writing to a file
         //
-		File file=new File("c:\\Nazar\\json-jamu\\"+formOfWord+".json");
-//        File file=new File("e:\\Develop\\json-jamu\\"+WordUniqueForm.getTloJam()+".json");
+//		File file=new File("c:\\Nazar\\json-jamu\\"+formOfWord+".json");
+        File file=new File("e:\\Develop\\json-jamu\\"+formOfWord+".json");
         file.createNewFile();
         FileWriter fileWriter = new FileWriter(file);
         System.out.println("Writing JSON object to file");

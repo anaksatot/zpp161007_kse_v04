@@ -16,8 +16,13 @@ public class WordUniqueFormEnglishServiceImpl implements WordUniqueFormService {
         //4 if found write some statistic
     }
 
+    @Override
+    public String firstXSystemOrthographyOfWord(WordUniqueForm wordUniqueForm) {
+        return "";
+    }
+
     public WordUniqueForm createNewWordUniqueForm(String tloJam) {
-        WordUniqueForm wordUniqueForm = new WordUniqueForm(tloJam);
+        WordUniqueForm wordUniqueForm = new WordUniqueForm(tloJam, LANGUAGE.ENGLISH);
         ArrayList<LinguisticCategory> linguisticCategoriesOfWordUniqueForm = new ArrayList<LinguisticCategory>();
         Scanner scannerName = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
@@ -48,7 +53,6 @@ public class WordUniqueFormEnglishServiceImpl implements WordUniqueFormService {
         System.out.println(wordUniqueForm);
         return wordUniqueForm;
     }
-
 
     public  void listOfLinguisticCategory() {
         System.out.println("Input item of form for this word");
