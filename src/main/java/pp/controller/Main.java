@@ -1,6 +1,6 @@
 package pp.controller;
 
-import pp.entity.LANGUAGE;
+import pp.linguisticCategories.LANGUAGE;
 import pp.service.TextFileDivideIntoWordsService;
 import pp.service.TextFileImproveService;
 import pp.service.TextFileReadService;
@@ -36,10 +36,5 @@ public class Main {
 
             }
         }
-
-
-        //	jamOvnServiceImpl = new JamOvnUkranianServiceImpl();
-        //jamOvnServiceImpl.createOrUpdateJamOvn("вітер");
-
     }
 }

@@ -1,6 +1,6 @@
 package pp.service;
 
-import pp.entity.LcNoun;
+import pp.linguisticCategories.LcNoun;
 
 public interface LcNounUkranianService extends LcNounService{
 

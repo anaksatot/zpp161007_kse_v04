@@ -1,9 +1,6 @@
 package pp.service;
 
-import pp.entity.CASE;
-import pp.entity.LcNoun;
-
-import java.util.ArrayList;
+import pp.linguisticCategories.LcNoun;
 
 public interface LcNounService {
 

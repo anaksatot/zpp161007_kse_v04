@@ -1,6 +1,10 @@
 package pp.serviceImpl;
 
-import pp.entity.*;
+import pp.grammaticalCategories.GENDER;
+import pp.grammaticalCategories.NUMBER;
+import pp.grammaticalCategories.CASE;
+import pp.linguisticCategories.LcNoun;
+import pp.linguisticCategories.LcNounUkrainian;
 import pp.service.LcNounUkranianService;
 
 import java.util.ArrayList;

@@ -1,5 +1,8 @@
 package pp.entity;
 
+import pp.linguisticCategories.LANGUAGE;
+import pp.linguisticCategories.LinguisticCategoryForms;
+
 public class WordUniqueForm {
 
 	private String formOfWord;

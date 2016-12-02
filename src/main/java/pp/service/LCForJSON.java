@@ -1,6 +1,6 @@
 package pp.service;
 
-import pp.entity.LinguisticCategory;
+import pp.linguisticCategories.LinguisticCategory;
 
 public interface LCForJSON {
     String getStringLCForJsonParser(LinguisticCategory lc);

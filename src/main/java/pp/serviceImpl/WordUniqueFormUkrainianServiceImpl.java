@@ -1,7 +1,9 @@
 package pp.serviceImpl;
 
-import org.json.simple.parser.ParseException;
 import pp.entity.*;
+import pp.linguisticCategories.LANGUAGE;
+import pp.linguisticCategories.LinguisticCategory;
+import pp.linguisticCategories.LinguisticCategoryForms;
 import pp.service.FirstXSystemOrthography;
 import pp.service.WordUniqueFormService;
 
@@ -15,14 +17,15 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         //2 try find
         //3 if not found interaction with human and create
         WordUniqueForm WordUniqueForm = createNewWordUniqueForm(word);
-        try {
-            new WordUniqueFormToFileWriteServiceImpl().writeToJSONfile(stringForJSONParser(WordUniqueForm), WordUniqueForm.getFormOfWord());
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+        //4 write to JSON
+//        try {
+//            new WordUniqueFormToFileWriteServiceImpl().writeToJSONfile(stringForJSONParser(WordUniqueForm), WordUniqueForm.getFormOfWord());
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
         ;
         System.out.println("xUkrainian " + firstXSystemOrthographyOfWord(WordUniqueForm));
-        //4 if found write some statistic
+        //5 if found write some statistic
         // sooom
         // sraaam
     }
@@ -55,6 +58,14 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
                 break;
             case 2:
                 linguisticCategoriesOfWordUniqueForm.add(new LcVerbUkrainianServiceImpl().defineLcVerbUniqueForm(word));
+                break;
+            case 3:
+                linguisticCategoriesOfWordUniqueForm.add(new LcAdverbUkrainianServiceImpl().defineLcAdverb(word));
+                System.out.println(new LcAdverbUkrainianServiceImpl().defineLcAdverb(word).toString());
+                break;
+            case 4:
+                linguisticCategoriesOfWordUniqueForm.add(new LcAdjectiveUkrainianServiceImpl().defineLcAdjective(word));
+                System.out.println(new LcAdverbUkrainianServiceImpl().defineLcAdverb(word).toString());
                 break;
             default:
                 System.out.println("Введіть коректний номер!");

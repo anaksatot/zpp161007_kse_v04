@@ -1,9 +1,9 @@
 package pp.serviceImpl;
 
-import pp.entity.CASE;
-import pp.entity.LcNounUkrainian;
-import pp.entity.LinguisticCategory;
-import pp.entity.NUMBER;
+import pp.linguisticCategories.LcNounUkrainian;
+import pp.linguisticCategories.LinguisticCategory;
+import pp.grammaticalCategories.CASE;
+import pp.grammaticalCategories.NUMBER;
 import pp.service.LCForJSON;
 
 import java.util.HashMap;

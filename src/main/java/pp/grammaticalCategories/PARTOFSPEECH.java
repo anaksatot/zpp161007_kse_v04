@@ -1,0 +1,5 @@
+package pp.grammaticalCategories;
+
+public enum PARTOFSPEECH {
+ADJECTIVE,ADVERB,CONJUNCTION,NOUN,PREPOSITION,PRONOUN,VERB;
+}

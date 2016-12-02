@@ -2,16 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0ee8d56-b491-4d2f-8dda-4e1f36dafb7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/firstXSystemOrthography.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/CASE.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PERFECTORIMPERFECT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/TIME.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/TYPICALFORMSOFVERB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormOfVerbAdjective.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormOfVerbPersonal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormsOfVerbAdjectiveConjugation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormsOfVerbPersonalConjugation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LCDefineDimension.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjective.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjectiveUkrainian.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverb.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverbUkrainian.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNoun.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcPronoun.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcVerb.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcVerbUkrainian.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveUkrainianService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcAdverbService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcAdverbUkrainianService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/FormsOfVerbAdjectiveConjugationServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/FormsOfVerbPersonalConjugationServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdjectiveUkrainianServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdverbUkrainianServiceImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/CASE.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcAdjective.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcAdverb.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcNoun.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcPronoun.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcVerb.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcVerbUkrainian.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/zpp161007_kse_v02/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/CASE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/GENDER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LANGUAGE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LC.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcAdjective.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcAdverb.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcConjunction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcNoun.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcNounEnglish.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcNounUkrainian.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcPreposition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcPronoun.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcVerb.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcVerbUkrainian.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LinguisticCategory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LinguisticCategoryForms.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/NUMBER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/PRONOUN.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/zpp161007_kse_v02/App.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/controller/Main.class" afterPath="$PROJECT_DIR$/target/classes/pp/controller/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/entity/WordUniqueForm.class" afterPath="$PROJECT_DIR$/target/classes/pp/entity/WordUniqueForm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LCForJSON.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LCForJSON.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LcNounService.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LcNounService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LcNounUkranianService.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LcNounUkranianService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LcVerbService.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LcVerbService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LcVerbUkrainianService.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LcVerbUkrainianService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LCForJSONImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LCForJSONImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LCForJSONImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LCForJSONImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LcNounUkrainianServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LcNounUkrainianServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LcVerbUkrainianServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LcVerbUkrainianServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyEnglish.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyEnglish.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyGermany.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyGermany.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyUkrainian.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyUkrainian.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/controller/Main.java" afterPath="$PROJECT_DIR$/src/main/java/pp/controller/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LANGUAGE.java" afterPath="$PROJECT_DIR$/src/main/java/pp/entity/LANGUAGE.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java" afterPath="$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/WordUniqueFormService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/WordUniqueFormService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LCForJSON.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LCForJSON.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LcNounService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcNounService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LcNounUkranianService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcNounUkranianService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LcVerbService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcVerbService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormToFileWriteServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormToFileWriteServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zpp161007_kse_v03.iml" afterPath="$PROJECT_DIR$/zpp161007_kse_v03.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/GENDER.java" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/GENDER.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LANGUAGE.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LANGUAGE.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LC.java" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PARTOFSPEECH.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcConjunction.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcConjunction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcNounEnglish.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounEnglish.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcNounUkrainian.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounUkrainian.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcPreposition.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcPreposition.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategory.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LinguisticCategory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategoryForms.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LinguisticCategoryForms.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/NUMBER.java" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/NUMBER.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/PRONOUN.java" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PRONOUN.java" />
     </list>
     <ignored path="zpp161007_kse_v03.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,130 +116,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LcNounUkrainianServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java">
+      <file leaf-file-name="LcAdverb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverb.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="145" column="23" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="23" />
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding>
-                <element signature="method#defineSingularAndPluralFormsForUniqueForm#0;class#LcNounUkrainianServiceImpl#0" expanded="false" />
-                <element signature="method#defineGender#0;class#LcNounUkrainianServiceImpl#0" expanded="false" />
-                <element signature="method#defineCasesOfNoun#0;class#LcNounUkrainianServiceImpl#0" expanded="false" />
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LCForJSONImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java">
+      <file leaf-file-name="LcAdjectiveUkrainian.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjectiveUkrainian.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="117" selection-start-line="41" selection-start-column="117" selection-end-line="41" selection-end-column="117" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordUniqueFormUkrainianServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WordUniqueFormUkrainianServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29864866">
+              <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LcAdjectiveService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveService.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LcAdjectiveUkrainianService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveUkrainianService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LcVerbUkrainianServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="method#defineLcVerbUniqueForm#0;class#LcVerbUkrainianServiceImpl#0" expanded="false" />
+                <element signature="method#getListOfTypicalFormsOfVerb#0;class#LcVerbUkrainianServiceImpl#0" expanded="false" />
+                <element signature="method#outListOfTypicalFormsOfVerb#0;class#LcVerbUkrainianServiceImpl#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LcAdjectiveUkrainianServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdjectiveUkrainianServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4121#4122#0" expanded="true" />
-                <element signature="e#4165#4166#0" expanded="true" />
-                <element signature="e#4318#4319#0" expanded="true" />
-                <element signature="e#4362#4363#0" expanded="true" />
-                <element signature="e#4515#4516#0" expanded="true" />
-                <element signature="e#4559#4560#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LANGUAGE.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LANGUAGE.java">
+      <file leaf-file-name="LcVerbUkrainianService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordUniqueFormToFileWriteServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormToFileWriteServiceImpl.java">
+      <file leaf-file-name="LcAdverbService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcAdverbService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LcVerbUkrainian.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcVerbUkrainian.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48243243">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordUniqueFormServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordUniqueFormEnglishServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java">
+      <file leaf-file-name="LcAdverbUkrainianService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcAdverbUkrainianService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#742#743#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/controller/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordUniqueForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.185185">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding>
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -166,9 +232,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -183,62 +249,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategories.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/JamOvn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/KseImproveTXTImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/KseServiceReadImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/KseServiceDivideImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/Jam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/kse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/JamOvnUkranianServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/JamOvnEnglishServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/TextFileImproveImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/TextFileImprove.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/TextFileImproveServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/TextFileReadService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/TextFileReadServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/TextFileWriteService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/KseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/TextFileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/TextFileDivideIntoSentencesService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/TextFileDivideIntoWordsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/TextFileDivideIntoWordsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkranianServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/controller/KseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/controller/TextAnalisysController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcNounService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcNounUkrainian.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcNounEnglish.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/WordUniqueFormToFileWriteService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategoryForms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/LCForJSON.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcNoun.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcNounUkranianService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcVerbService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkranianService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcVerb.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/pp/entity/PRONOUN.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcVerbUkrainian.java" />
         <option value="$PROJECT_DIR$/src/main/java/pp/service/FirstXSystemOrthography.java" />
         <option value="$PROJECT_DIR$/src/main/java/pp/service/WordUniqueFormService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/pp/entity/LANGUAGE.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pp/controller/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormToFileWriteServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/TYPICALFORMSOFVERB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/controller/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/TIME.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/AdjectiveFormOfVerb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/PersonalVerbForms.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/PERFECTORIMPERFECT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/FormsOfVerbPersonConjugation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/FormOfVerbPerson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcVerbService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcVerbUkrainian.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/FormOfVerbAdjective.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCDefineDimension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/FormsOfVerbAdjectiveConjugationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/FormsOfVerbAdjectiveConjugation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/FormOfVerbPersonal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/FormsOfVerbPersonalConjugationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/FormsOfVerbPersonalConjugation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/PARTOFSPEECH.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcNoun.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcVerb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/TYPICALFORMSOFVERB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/CASE.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcNounEnglish.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/entity/LcNounUkrainian.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounUkrainian.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcVerb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcAdverbUkrainianService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverbUkrainian.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjective.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjectiveUkrainian.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcAdverbService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdverbUkrainianServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveUkrainian.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveUkrainianServise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveUkrainianService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdjectiveUkrainianServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-34" />
+    <option name="y" value="1" />
     <option name="width" value="1604" />
     <option name="height" value="904" />
   </component>
@@ -325,130 +392,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zpp161007_kse_v03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zpp161007_kse_v04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serviceImpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zpp161007_kse_v03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zpp161007_kse_v04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zpp161007_kse_v03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zpp161007_kse_v04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zpp161007_kse_v03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zpp161007_kse_v04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -466,6 +413,9 @@
       <recent name="pp.service" />
       <recent name="pp.entity" />
       <recent name="pp.serviceImpl" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pp.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Application.zpp161007_kse_v03">
@@ -758,20 +708,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1604" height="904" extended-state="0" />
+    <frame x="-34" y="1" width="1604" height="904" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22786458" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18880208" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17884131" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08879093" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26448363" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20465995" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.009114583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -782,7 +733,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.009114583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -806,13 +756,25 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pp/entity/LcNounUkrainian.java</url>
-          <line>23</line>
+          <url>file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounUkrainian.java</url>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounEnglish.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounEnglish.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -821,189 +783,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LANGUAGE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcNounUkrainian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="93" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-            <element signature="e#430#431#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#753#754#0" expanded="false" />
-            <element signature="e#815#816#0" expanded="false" />
-            <element signature="e#850#851#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#900#901#0" expanded="false" />
-            <element signature="e#950#951#0" expanded="false" />
-            <element signature="e#975#976#0" expanded="false" />
-            <element signature="e#1161#1162#0" expanded="false" />
-            <element signature="e#1188#1189#0" expanded="false" />
-            <element signature="e#1254#1255#0" expanded="false" />
-            <element signature="e#1291#1292#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcNounEnglish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormToFileWriteServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcNoun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="29" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/CASE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/GENDER.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pp/zpp161007_kse_v02/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03824522">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/CASE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcAdverb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/NUMBER.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.056013178">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/TextFileImproveService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/TextFileReadServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/TextFileReadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/TextFileDivideIntoSentencesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13915417">
-          <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/TextFileDivideIntoWordsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/controller/TextAnalisysController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11486486">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcNounEnglish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategoryForms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LCForJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/TextFileImproveServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.51068616">
@@ -1018,17 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.962963">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcNounService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.114735655">
@@ -1036,101 +804,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcVerbService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09561305">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcNounUkranianService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07649044">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1721035">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcVerb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="e#86#87#0" expanded="false" />
-            <element signature="e#107#108#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcNoun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcNounUkrainian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-            <element signature="e#430#431#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#753#754#0" expanded="false" />
-            <element signature="e#815#816#0" expanded="false" />
-            <element signature="e#850#851#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#900#901#0" expanded="false" />
-            <element signature="e#950#951#0" expanded="false" />
-            <element signature="e#975#976#0" expanded="false" />
-            <element signature="e#1161#1162#0" expanded="false" />
-            <element signature="e#1188#1189#0" expanded="false" />
-            <element signature="e#1254#1255#0" expanded="false" />
-            <element signature="e#1291#1292#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcPronoun.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcPronoun.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/GENDER.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/GENDER.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/PRONOUN.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PRONOUN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,21 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.185185">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1176,64 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="145" column="23" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="23" />
-          <folding>
-            <element signature="method#defineSingularAndPluralFormsForUniqueForm#0;class#LcNounUkrainianServiceImpl#0" expanded="false" />
-            <element signature="method#defineGender#0;class#LcNounUkrainianServiceImpl#0" expanded="false" />
-            <element signature="method#defineCasesOfNoun#0;class#LcNounUkrainianServiceImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="117" selection-start-line="41" selection-start-column="117" selection-end-line="41" selection-end-column="117" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LANGUAGE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4121#4122#0" expanded="true" />
-            <element signature="e#4165#4166#0" expanded="true" />
-            <element signature="e#4318#4319#0" expanded="true" />
-            <element signature="e#4362#4363#0" expanded="true" />
-            <element signature="e#4515#4516#0" expanded="true" />
-            <element signature="e#4559#4560#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,14 +858,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30945945">
           <caret line="1007" column="56" selection-start-line="1007" selection-start-column="56" selection-end-line="1007" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LANGUAGE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16081081">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/TIME.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/controller/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PERFECTORIMPERFECT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1257,20 +888,360 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/controller/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64324325">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormOfVerbAdjective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LCDefineDimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/FormsOfVerbAdjectiveConjugationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/LcVerbUkrainian.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormsOfVerbAdjectiveConjugation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48243243">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="63" />
           <folding>
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#576#605#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormOfVerbPersonal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormsOfVerbPersonalConjugation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#567#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/FormsOfVerbPersonalConjugationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1282#1310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PARTOFSPEECH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounEnglish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#823#829#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/TYPICALFORMSOFVERB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13783784">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/CASE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13783784">
+          <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4061#4075#0" expanded="true" />
+            <element signature="e#4642#4656#0" expanded="true" />
+            <element signature="e#4715#4730#0" expanded="true" />
+            <element signature="e#5395#5401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNoun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcVerbUkrainian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcVerb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LinguisticCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounUkrainian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcVerbService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcNounUkranianService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdverbUkrainianServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverbUkrainian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjectiveUkrainian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcAdverbService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcAdverbUkrainianService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveUkrainianService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdjectiveUkrainianServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="method#defineLcVerbUniqueForm#0;class#LcVerbUkrainianServiceImpl#0" expanded="false" />
+            <element signature="method#getListOfTypicalFormsOfVerb#0;class#LcVerbUkrainianServiceImpl#0" expanded="false" />
+            <element signature="method#outListOfTypicalFormsOfVerb#0;class#LcVerbUkrainianServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29864866">
+          <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

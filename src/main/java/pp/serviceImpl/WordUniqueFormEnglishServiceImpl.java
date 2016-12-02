@@ -1,6 +1,7 @@
 package pp.serviceImpl;
 
 import pp.entity.*;
+import pp.linguisticCategories.*;
 import pp.service.WordUniqueFormService;
 
 import java.util.ArrayList;
@@ -21,8 +22,8 @@ public class WordUniqueFormEnglishServiceImpl implements WordUniqueFormService {
         return "";
     }
 
-    public WordUniqueForm createNewWordUniqueForm(String tloJam) {
-        WordUniqueForm wordUniqueForm = new WordUniqueForm(tloJam, LANGUAGE.ENGLISH);
+    public WordUniqueForm createNewWordUniqueForm(String formOfWord) {
+        WordUniqueForm wordUniqueForm = new WordUniqueForm(formOfWord, LANGUAGE.ENGLISH);
         ArrayList<LinguisticCategory> linguisticCategoriesOfWordUniqueForm = new ArrayList<LinguisticCategory>();
         Scanner scannerName = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
@@ -37,12 +38,8 @@ public class WordUniqueFormEnglishServiceImpl implements WordUniqueFormService {
             n = scanner2.nextInt();
             switch (n) {
                 case 1:
-                    linguisticCategoriesOfWordUniqueForm.add(new LcNounEnglish(tloJam));
+                    linguisticCategoriesOfWordUniqueForm.add(new LcNounEnglish(formOfWord));
                     break;
-                case 2:
-                    linguisticCategoriesOfWordUniqueForm.add(new LcVerb());
-                    break;
-
                 default:
                     System.out.println("try input true item of l. category");
             }
