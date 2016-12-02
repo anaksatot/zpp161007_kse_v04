@@ -2,99 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0ee8d56-b491-4d2f-8dda-4e1f36dafb7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/CASE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PERFECTORIMPERFECT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/TIME.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/TYPICALFORMSOFVERB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormOfVerbAdjective.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormOfVerbPersonal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormsOfVerbAdjectiveConjugation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/FormsOfVerbPersonalConjugation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LCDefineDimension.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjective.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdjectiveUkrainian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcAdverbUkrainian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNoun.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcPronoun.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcVerb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcVerbUkrainian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcAdjectiveUkrainianService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcAdverbService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcAdverbUkrainianService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/FormsOfVerbAdjectiveConjugationServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/FormsOfVerbPersonalConjugationServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdjectiveUkrainianServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcAdverbUkrainianServiceImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/CASE.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcAdjective.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcAdverb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcNoun.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcPronoun.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcVerb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcVerbUkrainian.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pp/zpp161007_kse_v02/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/CASE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/GENDER.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LANGUAGE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcAdjective.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcAdverb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcConjunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcNoun.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcNounEnglish.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcNounUkrainian.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcPreposition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcPronoun.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcVerb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LcVerbUkrainian.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LinguisticCategory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/LinguisticCategoryForms.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/NUMBER.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/entity/PRONOUN.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pp/zpp161007_kse_v02/App.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/controller/Main.class" afterPath="$PROJECT_DIR$/target/classes/pp/controller/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/entity/WordUniqueForm.class" afterPath="$PROJECT_DIR$/target/classes/pp/entity/WordUniqueForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LCForJSON.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LCForJSON.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LcNounService.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LcNounService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LcNounUkranianService.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LcNounUkranianService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LcVerbService.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LcVerbService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/service/LcVerbUkrainianService.class" afterPath="$PROJECT_DIR$/target/classes/pp/service/LcVerbUkrainianService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LCForJSONImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LCForJSONImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LCForJSONImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LCForJSONImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LcNounUkrainianServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LcNounUkrainianServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LcVerbUkrainianServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/LcVerbUkrainianServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyEnglish.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyEnglish.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyGermany.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyGermany.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyUkrainian.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl$FirstXSystemOrthographyUkrainian.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/controller/Main.java" afterPath="$PROJECT_DIR$/src/main/java/pp/controller/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java" afterPath="$PROJECT_DIR$/src/main/java/pp/entity/WordUniqueForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LCForJSON.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LCForJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LcNounService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcNounService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LcNounUkranianService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcNounUkranianService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LcVerbService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcVerbService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java" afterPath="$PROJECT_DIR$/src/main/java/pp/service/LcVerbUkrainianService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LCForJSONImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcNounUkrainianServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/LcVerbUkrainianServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormEnglishServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pp/serviceImpl/WordUniqueFormUkrainianServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/GENDER.java" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/GENDER.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LANGUAGE.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LANGUAGE.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LC.java" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PARTOFSPEECH.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcConjunction.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcConjunction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcNounEnglish.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounEnglish.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcNounUkrainian.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcNounUkrainian.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LcPreposition.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LcPreposition.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategory.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LinguisticCategory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/LinguisticCategoryForms.java" afterPath="$PROJECT_DIR$/src/main/java/pp/linguisticCategories/LinguisticCategoryForms.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/NUMBER.java" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/NUMBER.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pp/entity/PRONOUN.java" afterPath="$PROJECT_DIR$/src/main/java/pp/grammaticalCategories/PRONOUN.java" />
     </list>
     <ignored path="zpp161007_kse_v03.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -334,6 +242,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -392,11 +303,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zpp161007_kse_v03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zpp161007_kse_v04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linguisticCategories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zpp161007_kse_v03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zpp161007_kse_v04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grammaticalCategories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -708,31 +676,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-34" y="1" width="1604" height="904" extended-state="1" />
-    <editor active="true" />
+    <frame x="-34" y="1" width="1604" height="904" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18880208" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08879093" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20465995" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.009114583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20465995" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18880208" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08879093" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.009114583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -872,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,16 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -929,9 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -939,9 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="63" />
-          <folding>
-            <element signature="e#576#605#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -949,7 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,9 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#567#595#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,10 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1282#1310#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13783784">
           <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,9 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13783784">
           <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,13 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4061#4075#0" expanded="true" />
-            <element signature="e#4642#4656#0" expanded="true" />
-            <element signature="e#4715#4730#0" expanded="true" />
-            <element signature="e#5395#5401#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,10 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="15" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="15" />
-          <folding>
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,7 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,12 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,10 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,11 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,10 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
