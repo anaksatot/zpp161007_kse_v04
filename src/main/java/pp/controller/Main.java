@@ -1,10 +1,13 @@
 package pp.controller;
 
 import pp.linguisticCategories.LANGUAGE;
-import pp.service.TextFileDivideIntoWordsService;
-import pp.service.TextFileImproveService;
-import pp.service.TextFileReadService;
-import pp.serviceImpl.*;
+import pp.textFileProcessing.TextFileDivideIntoWordsService;
+import pp.textFileProcessing.TextFileImproveService;
+import pp.textFileProcessing.TextFileReadService;
+import pp.textFileProcessing.TextFileDivideIntoWordsServiceImpl;
+import pp.textFileProcessing.TextFileImproveServiceImpl;
+import pp.textFileProcessing.TextFileReadServiceImpl;
+import pp.word.WordUniqueFormUkrainianServiceImpl;
 
 import java.util.List;
 
