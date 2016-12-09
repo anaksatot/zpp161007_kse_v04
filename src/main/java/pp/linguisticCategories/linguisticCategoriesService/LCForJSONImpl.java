@@ -1,7 +1,6 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
-import pp.linguisticCategories.LcNounUkrainian;
-import pp.linguisticCategories.LinguisticCategory;
+import pp.linguisticCategories.*;
 import pp.grammaticalCategories.CASE;
 import pp.grammaticalCategories.NUMBER;
 
@@ -15,14 +14,26 @@ public class LCForJSONImpl implements LCForJSON{
             case NOUN:
                 return getStringLCForJsonParserLcNounUkrainian((LcNounUkrainian) lc);
             case VERB:
-                return "\""+"verb"+"\""+":"+"\""+"vvvvv"+"\"";
+                return getStringLCForJsonParserLcVerbUkrainian((LcVerbUkrainian) lc);
+            case ADVERB:
+                return getStringLCForJsonParserLcAdverbUkrainian((LcAdverbUkrainian) lc);
+            case ADJECTIVE:
+                return getStringLCForJsonParserLcAdjectiveUkrainian((LcAdjectiveUkrainian) lc);
+            case PRONOUN:
+                return getStringLCForJsonParserLcPronounUkrainian((LcPronounUkrainian) lc);
+            case PREPOSITION:
+                return getStringLCForJsonParserLcPrepositionUkrainian((LcPrepositionUkrainian) lc);
+            case CONJUNCTION:
+                return getStringLCForJsonParserLcConjunctionUkrainian((LcConjunctionUkrainian) lc);
+            case NUMERAL:
+                return getStringLCForJsonParserLcNumeralUkrainian((LcNumeralUkrainian) lc);
             default:
-                System.out.println("Введіть !");
+                System.out.println("Введіть коректну позицію частини мови!");
                 return "";
         }
 }
 
-    public String getStringLCForJsonParserLcNounUkrainian(LcNounUkrainian lcNounUkrainian) {
+    public String getStringLCForJsonParserLcNounUkrainianFull(LcNounUkrainian lcNounUkrainian) {
         String stForJsonParser; int k = 0;
         stForJsonParser = "\""+"LcNounUkrainian"+"\""+":"+"{";
         stForJsonParser = stForJsonParser + "\""+"singularOrPluralForm"+"\""+":"+"{";
@@ -46,7 +57,70 @@ public class LCForJSONImpl implements LCForJSON{
         }
         stForJsonParser = stForJsonParser+"}";
         stForJsonParser = stForJsonParser+"}";
-        // System.out.println("lcccc "+stForJsonParser);
+        return stForJsonParser;
+    }
+
+    public String getStringLCForJsonParserLcNounUkrainian(LcNounUkrainian lcNounUkrainian) {
+        String stForJsonParser;
+        stForJsonParser = "\""+"LcNounUkrainian"+"\""+":"+"{";
+        // here will be code for define all cases
+        stForJsonParser = stForJsonParser+"}";
+        return stForJsonParser;
+    }
+
+    public String getStringLCForJsonParserLcVerbUkrainian(LcVerbUkrainian lcVerbUkrainian) {
+        String stForJsonParser;
+        stForJsonParser = "\""+"LcVerbUkrainian"+"\""+":"+"{";
+        // here will be code for define all cases
+        stForJsonParser = stForJsonParser+"}";
+        return stForJsonParser;
+    }
+
+    public String getStringLCForJsonParserLcAdverbUkrainian(LcAdverbUkrainian lcAdverbUkrainian) {
+        String stForJsonParser;
+        stForJsonParser = "\""+"LcAdverbUkrainian"+"\""+":"+"{";
+        // here will be code for define all cases
+        stForJsonParser = stForJsonParser+"}";
+        return stForJsonParser;
+    }
+
+    public String getStringLCForJsonParserLcAdjectiveUkrainian(LcAdjectiveUkrainian lcAdjectiveUkrainian) {
+        String stForJsonParser;
+        stForJsonParser = "\""+"LcAdjectiveUkrainian"+"\""+":"+"{";
+        // here will be code for define all cases
+        stForJsonParser = stForJsonParser+"}";
+        return stForJsonParser;
+    }
+
+    public String getStringLCForJsonParserLcPronounUkrainian(LcPronounUkrainian lcPronounUkrainian) {
+        String stForJsonParser;
+        stForJsonParser = "\""+"LcPronounUkrainian"+"\""+":"+"{";
+        // here will be code for define all cases
+        stForJsonParser = stForJsonParser+"}";
+        return stForJsonParser;
+    }
+
+    public String getStringLCForJsonParserLcPrepositionUkrainian(LcPrepositionUkrainian lcPrepositionUkrainian) {
+        String stForJsonParser;
+        stForJsonParser = "\""+"LcPrepositionUkrainian"+"\""+":"+"{";
+        // here will be code for define all cases
+        stForJsonParser = stForJsonParser+"}";
+        return stForJsonParser;
+    }
+
+    public String getStringLCForJsonParserLcConjunctionUkrainian(LcConjunctionUkrainian lcConjunctionUkrainian) {
+        String stForJsonParser;
+        stForJsonParser = "\""+"LcConjunctionUkrainian"+"\""+":"+"{";
+        // here will be code for define all cases
+        stForJsonParser = stForJsonParser+"}";
+        return stForJsonParser;
+    }
+
+    public String getStringLCForJsonParserLcNumeralUkrainian(LcNumeralUkrainian lcNumeralUkrainian) {
+        String stForJsonParser;
+        stForJsonParser = "\""+"LcNumeralUkrainian"+"\""+":"+"{";
+        // here will be code for define all cases
+        stForJsonParser = stForJsonParser+"}";
         return stForJsonParser;
     }
 

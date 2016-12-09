@@ -46,4 +46,14 @@ public class WordUniqueForm {
 		return linguisticCategoryForms;
 	}
 
+	@Override
+	public String toString() {
+		return "WordUniqueForm{" +
+				"formOfWord='" + formOfWord + '\'' +
+				", quantiySymbols=" + quantiySymbols +
+				", uniqueIndex=" + uniqueIndex +
+				", language=" + language +
+				", linguisticCategoryForms=" + linguisticCategoryForms +
+				'}';
+	}
 }

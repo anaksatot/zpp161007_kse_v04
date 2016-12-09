@@ -2,6 +2,6 @@ package pp.word;
 import pp.word.WordUniqueForm;
 
 public interface WordUniqueFormService {
-	void createOrUpdateWordUniqueForm(String wordUnique);
+	// WordUniqueForm createOrFindWordUniqueForm(String wordUnique);
 	String firstXSystemOrthographyOfWord(WordUniqueForm wordUniqueForm);
 }

@@ -58,4 +58,13 @@ public class LcNounUkrainian extends LcNoun{
 	public void setCasesOfWord(HashMap<CASE, String> casesOfWord) {
 		this.casesOfWord = casesOfWord;
 	}
+
+	@Override
+	public String toString() {
+		return "LcNounUkrainian{" +
+				"singularOrPluralForms=" + singularOrPluralForms +
+				", gender=" + gender +
+				", casesOfWord=" + casesOfWord +
+				'}';
+	}
 }

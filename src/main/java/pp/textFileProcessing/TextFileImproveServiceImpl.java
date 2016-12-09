@@ -107,4 +107,13 @@ public class TextFileImproveServiceImpl implements TextFileImproveService {
 		File file = new File(pathToFile);
 		return getFileName(file);
 	}
+
+	public  boolean fileHaveJSONExtension(File file) {
+		String ext = getFileExtension(file);
+		if (ext.equals("json")) {
+			return true;
+		}
+		return false;
+
+	}
 }

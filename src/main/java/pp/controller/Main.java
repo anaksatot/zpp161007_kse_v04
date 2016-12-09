@@ -28,16 +28,12 @@ public class Main {
             //textOfFile = kseServiceImpl.readTextFromStringAndDivideOnWordsList(pathToFile);
             //textOfFile = kseServiceImpl.readTextFromStringAndDivideOnWordsMap(pathToFile);
             TextFileDivideIntoWordsService textFileServiceImpl = new TextFileDivideIntoWordsServiceImpl();
-            List<String>  textOfFile = textFileServiceImpl.readTextFromStringAndDivideOnWordsList(textInOneString);
+            List<String>  textOfFileDivideOnListWords = textFileServiceImpl.readTextFromStringAndDivideOnWordsList(textInOneString);
             //textOfFile = kseServiceImpl.readTextFromStringAndDivideOnSentencesList(textInOneString);
             //textOfFile = kseServiceImpl.readTextFromStringAndDivideOnSentencesTreeSet(textInOneString);
             System.out.println(textInOneString);
-            WordUniqueFormUkrainianServiceImpl wordUniqueFormOvnServiceImpl = new WordUniqueFormUkrainianServiceImpl();
-            for (String word : textOfFile) {
-                System.out.println(word);
-                wordUniqueFormOvnServiceImpl.createOrUpdateWordUniqueForm(word);
-
-            }
+            WordUniqueFormUkrainianServiceImpl parsingTextToWordsUniqueForm = new WordUniqueFormUkrainianServiceImpl();
+            parsingTextToWordsUniqueForm.parsingTextOfUniqueWords(textOfFileDivideOnListWords);
         }
     }
 }

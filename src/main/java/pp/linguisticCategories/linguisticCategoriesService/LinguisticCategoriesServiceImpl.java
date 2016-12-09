@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class LinguisticCategoriesServiceImpl {
 
     public static void listOfLinguisticCategoryInUkrainianOut() {
-        System.out.println("Перелік частин мови");
+        System.out.println("Введіть позицію частини мови до якої належить слово!");
         System.out.println("1. Іменник");
         System.out.println("2. Дієслово");
         System.out.println("3. Прислівник");
@@ -18,11 +18,11 @@ public class LinguisticCategoriesServiceImpl {
         System.out.println("5. Займенник");
         System.out.println("6. Прийменник");
         System.out.println("7. Частка");
-
+        System.out.println("8. Числівник");
     }
 
     public static void listNumeralCasesOfNounInUkrainianOut(){
-        System.out.println("введіть відмінювання іменника по числах");
+        System.out.println("Введіть відмінювання іменника по числах");
         System.out.println("1. однина");
         System.out.println("2. множина");
         System.out.println("3. однини та множини");

@@ -1,5 +1,6 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
+import pp.grammaticalCategories.PARTOFSPEECH;
 import pp.linguisticCategories.LcAdjectiveUkrainian;
 
 /**
@@ -8,6 +9,6 @@ import pp.linguisticCategories.LcAdjectiveUkrainian;
 public class LcAdjectiveUkrainianServiceImpl implements LcAdjectiveUkrainianService {
     @Override
     public LcAdjectiveUkrainian defineLcAdjective(String word) {
-        return null;
+        return new LcAdjectiveUkrainian(PARTOFSPEECH.ADJECTIVE,word);
     }
 }
