@@ -6,7 +6,5 @@ import java.util.Set;
 
 
 public interface TextFileDivideIntoWordsService {
-	public List<String>  readTextFromStringAndDivideOnWordsList(String textInOneString);
-	public Set<String>  readTextFromStringAndDivideOnWordsSet(String textInOneString);
-	public Map<Integer,String>  readTextFromStringAndDivideOnWordsMap(String textInOneString);
+	List<String>  readTextFromStringAndDivideOnWordsList(String textInOneString);
 }

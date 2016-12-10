@@ -3,7 +3,7 @@ package pp.linguisticCategories;
 import pp.grammaticalCategories.PARTOFSPEECH;
 
 public abstract class LinguisticCategory {
-	private PARTOFSPEECH linguisticCategoryEnum; // part of speach
+	private PARTOFSPEECH linguisticCategoryEnum;
 	private String formOfWord;
 
 	public LinguisticCategory(PARTOFSPEECH linguisticCategoryE) {

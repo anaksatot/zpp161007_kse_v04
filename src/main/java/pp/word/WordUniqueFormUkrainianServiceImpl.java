@@ -1,15 +1,13 @@
 package pp.word;
 
 import com.google.gson.Gson;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import pp.linguisticCategories.LANGUAGE;
 import pp.linguisticCategories.LinguisticCategory;
 import pp.linguisticCategories.LinguisticCategoryForms;
 import pp.linguisticCategories.linguisticCategoriesService.*;
 import pp.textFileProcessing.TextFileImproveServiceImpl;
-import pp.textFileProcessing.WordUniqueFormToFileWriteServiceImpl;
+import pp.textFileProcessing.TextFileReadAndWriteServiceImpl;
 
 import java.io.*;
 import java.util.*;
@@ -18,16 +16,13 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
 
     public void parsingTextOfUniqueWords(List<String> textOfFileDivideOnListWords) {
 
-        //1 get all WordUniqueForm
         System.out.println("Start of text parsing");
         final File folder = new File("e:\\Develop\\json-jamu\\");
         HashMap<String, WordUniqueForm> allWordUniqueForm = getAllWordUniqueFormFronJSONfiles(folder);
-        //2 try find
-        //4 write to JSON
         for (String word : textOfFileDivideOnListWords) {
             if (!allWordUniqueForm.containsKey(word)) {
                 try {
-                    new WordUniqueFormToFileWriteServiceImpl().writeToJSONfile(stringForJSONParser(createNewWordUniqueForm(word)), word);
+                    new TextFileReadAndWriteServiceImpl().writeToJSONfile(stringForJSONParser(createNewWordUniqueForm(word)), word);
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
@@ -46,9 +41,8 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
 
             }
         }
-//        System.out.println("wwwu "+allWordUniqueForm.size());
 //        for (Map.Entry<String, WordUniqueForm> wordUniqueFormEntry:allWordUniqueForm.entrySet()) {
-//            System.out.println("wuuu "+wordUniqueFormEntry.getValue().toString());
+//            System.out.println(wordUniqueFormEntry.getValue().toString());
 //        }
         return allWordUniqueForm;
     }
@@ -63,40 +57,6 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         }
         Gson gson = new Gson();
         WordUniqueForm wordUniqueForm = gson.fromJson(br, WordUniqueForm.class);
-        return wordUniqueForm;
-
-    }
-
-    public WordUniqueForm readJSONfileAndConvertToObjectV2(final File someFile) {
-
-        JSONParser parser = new JSONParser();
-        String nameEmpty = "";
-
-        try {
-
-            Object obj = parser.parse(new FileReader(someFile));
-            JSONObject jsonObject = (JSONObject) obj;
-            String name = (String) jsonObject.get("formOfWord");
-            System.out.println(name);
-            return convertJSONObjectToObjectWordUniqueFormV2(jsonObject);
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        WordUniqueForm wordUniqueForm = new WordUniqueForm(nameEmpty, LANGUAGE.UKRAINIAN);
-       return wordUniqueForm;
-    }
-
-    public WordUniqueForm convertJSONObjectToObjectWordUniqueFormV2(JSONObject jsonObject) {
-
-        String name = (String) jsonObject.get("formOfWord");
-        Gson gson = new Gson();
-        System.out.println(name);
-        WordUniqueForm wordUniqueForm = new WordUniqueForm("", LANGUAGE.UKRAINIAN);
         return wordUniqueForm;
 
     }
