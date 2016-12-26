@@ -1,6 +1,6 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 import pp.linguisticCategories.LcNumeral;
 import pp.linguisticCategories.LcNumeralUkrainian;
 
@@ -9,6 +9,6 @@ import pp.linguisticCategories.LcNumeralUkrainian;
  */
 public class LcNumeralUkrainianServiceImpl {
     public LcNumeral defineLcNumeral(String word) {
-        return new LcNumeralUkrainian(PARTOFSPEECH.NUMERAL,word);
+        return new LcNumeralUkrainian(PartOfSpeech.NUMERAL,word);
     }
 }

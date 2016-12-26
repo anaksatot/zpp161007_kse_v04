@@ -1,6 +1,6 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 import pp.linguisticCategories.LcPreposition;
 import pp.linguisticCategories.LcPrepositionUkrainian;
 
@@ -9,6 +9,6 @@ import pp.linguisticCategories.LcPrepositionUkrainian;
  */
 public class LcPrerositionUkrainianServiceImpl {
     public LcPreposition defineLcPrerosition(String word) {
-        return  new LcPrepositionUkrainian(PARTOFSPEECH.PREPOSITION,word);
+        return  new LcPrepositionUkrainian(PartOfSpeech.PREPOSITION,word);
     }
 }

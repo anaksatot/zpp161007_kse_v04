@@ -1,6 +1,6 @@
 package pp.word;
 
-import pp.linguisticCategories.LANGUAGE;
+import pp.linguisticCategories.Language;
 import pp.linguisticCategories.LinguisticCategoryForms;
 
 public class WordUniqueForm {
@@ -8,11 +8,11 @@ public class WordUniqueForm {
 	private String formOfWord;
 	private int quantiySymbols;
 	private long uniqueIndex;
-	private LANGUAGE language;
+	private Language language;
 	private LinguisticCategoryForms linguisticCategoryForms;
 	private static int accountOfWords;
 
-	public WordUniqueForm(String formOfWord,LANGUAGE language) {
+	public WordUniqueForm(String formOfWord,Language language) {
 		this.formOfWord = formOfWord;
 		this.language = language;
 		++accountOfWords;
@@ -30,7 +30,7 @@ public class WordUniqueForm {
 		return uniqueIndex;
 	}
 
-	public LANGUAGE getLanguage() {
+	public Language getLanguage() {
 		return language;
 	}
 

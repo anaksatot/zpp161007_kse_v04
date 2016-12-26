@@ -1,13 +1,13 @@
 package pp.linguisticCategories;
 
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 
 public abstract class LcNoun extends LinguisticCategory{
 
 
 	public LcNoun(String formOfWord) {
-		super(PARTOFSPEECH.NOUN, formOfWord);
+		super(PartOfSpeech.NOUN, formOfWord);
 	}
 
 

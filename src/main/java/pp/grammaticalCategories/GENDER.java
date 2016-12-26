@@ -1,5 +1,5 @@
 package pp.grammaticalCategories;
 
-public enum GENDER {
+public enum Gender {
 	MALE, FEMALE, MEDIUM;
 }

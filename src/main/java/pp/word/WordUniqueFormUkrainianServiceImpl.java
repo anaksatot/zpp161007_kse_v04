@@ -2,7 +2,7 @@ package pp.word;
 
 import com.google.gson.Gson;
 import org.json.simple.parser.ParseException;
-import pp.linguisticCategories.LANGUAGE;
+import pp.linguisticCategories.Language;
 import pp.linguisticCategories.LinguisticCategory;
 import pp.linguisticCategories.LinguisticCategoryForms;
 import pp.linguisticCategories.linguisticCategoriesService.*;
@@ -35,7 +35,7 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
     public HashMap<String, WordUniqueForm> getAllWordUniqueFormFronJSONfiles(final File folder) {
         HashMap<String, WordUniqueForm> allWordUniqueForm = new HashMap<String, WordUniqueForm>();
         for (final File fileEntry : folder.listFiles()) {
-            if (!fileEntry.isDirectory()&&(new TextFileImproveServiceImpl().fileHaveJSONExtension(fileEntry))) {
+            if (!fileEntry.isDirectory()&&(new TextFileImproveServiceImpl().fileIsJSON(fileEntry.getAbsolutePath()))) {
                 WordUniqueForm wordUniqueForm = readJSONfileAndConvertToObject(fileEntry);
                 allWordUniqueForm.put(wordUniqueForm.getFormOfWord(),wordUniqueForm);
 
@@ -74,47 +74,50 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
     }
 
     public WordUniqueForm createNewWordUniqueForm(String word) {
-        WordUniqueForm WordUniqueForm = new WordUniqueForm(word, LANGUAGE.UKRAINIAN);
+        WordUniqueForm WordUniqueForm = new WordUniqueForm(word, Language.UKRAINIAN);
         ArrayList<LinguisticCategory> linguisticCategoriesOfWordUniqueForm = new ArrayList<LinguisticCategory>();
         Scanner scanner2 = new Scanner(System.in);
-        System.out.println("Визнаення слова: " + word.toUpperCase());
-        new LinguisticCategoriesServiceImpl().listOfLinguisticCategoryInUkrainianOut();
-        int n = scanner2.nextInt();
 
-        switch (n) {
-            case 1:
-                linguisticCategoriesOfWordUniqueForm.add(new LcNounUkrainianServiceImpl().defineLcNounUniqueForm(word));
-                break;
-            case 2:
-                linguisticCategoriesOfWordUniqueForm.add(new LcVerbUkrainianServiceImpl().defineLcVerbUniqueForm(word));
-                break;
-            case 3:
-                linguisticCategoriesOfWordUniqueForm.add(new LcAdverbUkrainianServiceImpl().defineLcAdverb(word));
-                System.out.println(new LcAdverbUkrainianServiceImpl().defineLcAdverb(word).toString());
-                break;
-            case 4:
-                linguisticCategoriesOfWordUniqueForm.add(new LcAdjectiveUkrainianServiceImpl().defineLcAdjective(word));
-                System.out.println(new LcAdjectiveUkrainianServiceImpl().defineLcAdjective(word).toString());
-                break;
-            case 5:
-                linguisticCategoriesOfWordUniqueForm.add(new LcPronounUkrainianServiceImpl().defineLcPronoun(word));
-                System.out.println(new LcPronounUkrainianServiceImpl().defineLcPronoun(word).toString());
-                break;
-            case 6:
-                linguisticCategoriesOfWordUniqueForm.add(new LcPrerositionUkrainianServiceImpl().defineLcPrerosition(word));
-                System.out.println(new LcPrerositionUkrainianServiceImpl().defineLcPrerosition(word).toString());
-                break;
-            case 7:
-                linguisticCategoriesOfWordUniqueForm.add(new LcConjunctionUkrainianServiceImpl().defineLcConjunction(word));
-                System.out.println(new LcConjunctionUkrainianServiceImpl().defineLcConjunction(word).toString());
-                break;
-            case 8:
-                linguisticCategoriesOfWordUniqueForm.add(new LcNumeralUkrainianServiceImpl().defineLcNumeral(word));
-                System.out.println(new LcNumeralUkrainianServiceImpl().defineLcNumeral(word).toString());
-                break;
-            default:
-                System.out.println("Введіть коректний номер!");
-
+        while (true) {
+            System.out.println("Визнаення слова: " + word.toUpperCase());
+            new LinguisticCategoriesServiceImpl().listOfLinguisticCategoryInUkrainianOut();
+            int n = scanner2.nextInt();
+            switch (n) {
+                case 1:
+                    linguisticCategoriesOfWordUniqueForm.add(new LcNounUkrainianServiceImpl().defineLcNounUniqueForm(word));
+                    break;
+                case 2:
+                    linguisticCategoriesOfWordUniqueForm.add(new LcVerbUkrainianServiceImpl().defineLcVerbUniqueForm(word));
+                    break;
+                case 3:
+                    linguisticCategoriesOfWordUniqueForm.add(new LcAdverbUkrainianServiceImpl().defineLcAdverb(word));
+                    System.out.println(new LcAdverbUkrainianServiceImpl().defineLcAdverb(word).toString());
+                    break;
+                case 4:
+                    linguisticCategoriesOfWordUniqueForm.add(new LcAdjectiveUkrainianServiceImpl().defineLcAdjective(word));
+                    System.out.println(new LcAdjectiveUkrainianServiceImpl().defineLcAdjective(word).toString());
+                    break;
+                case 5:
+                    linguisticCategoriesOfWordUniqueForm.add(new LcPronounUkrainianServiceImpl().defineLcPronoun(word));
+                    System.out.println(new LcPronounUkrainianServiceImpl().defineLcPronoun(word).toString());
+                    break;
+                case 6:
+                    linguisticCategoriesOfWordUniqueForm.add(new LcPrerositionUkrainianServiceImpl().defineLcPrerosition(word));
+                    System.out.println(new LcPrerositionUkrainianServiceImpl().defineLcPrerosition(word).toString());
+                    break;
+                case 7:
+                    linguisticCategoriesOfWordUniqueForm.add(new LcConjunctionUkrainianServiceImpl().defineLcConjunction(word));
+                    System.out.println(new LcConjunctionUkrainianServiceImpl().defineLcConjunction(word).toString());
+                    break;
+                case 8:
+                    linguisticCategoriesOfWordUniqueForm.add(new LcNumeralUkrainianServiceImpl().defineLcNumeral(word));
+                    System.out.println(new LcNumeralUkrainianServiceImpl().defineLcNumeral(word).toString());
+                    break;
+                default:
+                    System.out.println("некоректний номер частини мови! спробуйте ще раз!");
+                    continue;
+            }
+            break;
         }
         WordUniqueForm.setLinguisticCategoryForms(new LinguisticCategoryForms(linguisticCategoriesOfWordUniqueForm));
         return WordUniqueForm;

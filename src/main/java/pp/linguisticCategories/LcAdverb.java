@@ -1,9 +1,9 @@
 package pp.linguisticCategories;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 
 public abstract class LcAdverb extends LinguisticCategory{
     public LcAdverb(String formOfWord) {
-        super(PARTOFSPEECH.ADVERB, formOfWord);
+        super(PartOfSpeech.ADVERB, formOfWord);
     }
 }

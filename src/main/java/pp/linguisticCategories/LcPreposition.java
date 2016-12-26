@@ -1,10 +1,10 @@
 package pp.linguisticCategories;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 
 public class LcPreposition extends LinguisticCategory{
 
-    public LcPreposition(PARTOFSPEECH linguisticCategoryEnum, String formOfWord) {
+    public LcPreposition(PartOfSpeech linguisticCategoryEnum, String formOfWord) {
         super(linguisticCategoryEnum, formOfWord);
     }
 }

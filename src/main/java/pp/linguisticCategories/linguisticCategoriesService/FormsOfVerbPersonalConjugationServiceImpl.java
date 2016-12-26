@@ -1,8 +1,8 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
-import pp.grammaticalCategories.PERFECTORIMPERFECT;
-import pp.grammaticalCategories.PRONOUN;
-import pp.grammaticalCategories.TIME;
+import pp.grammaticalCategories.PerfectOrImperfect;
+import pp.grammaticalCategories.Pronoun;
+import pp.grammaticalCategories.Time;
 import pp.linguisticCategories.FormOfVerbPersonal;
 import pp.linguisticCategories.FormsOfVerbPersonalConjugation;
 import pp.linguisticCategories.LCDefineDimension;
@@ -35,23 +35,23 @@ public class FormsOfVerbPersonalConjugationServiceImpl {
     }
 
     HashMap<FormOfVerbPersonal, String> loopThroughPerfectImperfectPersonalForm(HashMap<FormOfVerbPersonal, String> mapPersonalFormOfVerb) {
-        for (PERFECTORIMPERFECT somePerfectImperfect: PERFECTORIMPERFECT.values())  {
+        for (PerfectOrImperfect somePerfectImperfect: PerfectOrImperfect.values())  {
             mapPersonalFormOfVerb = loopThroughTimesPersonalForm(somePerfectImperfect,mapPersonalFormOfVerb);
         }
         return mapPersonalFormOfVerb;
     }
 
-    HashMap<FormOfVerbPersonal, String> loopThroughTimesPersonalForm(PERFECTORIMPERFECT somePerfectImperfect, HashMap<FormOfVerbPersonal, String> mapPersonalFormOfVerb) {
-        for (TIME someTime: TIME.values()) {
+    HashMap<FormOfVerbPersonal, String> loopThroughTimesPersonalForm(PerfectOrImperfect somePerfectImperfect, HashMap<FormOfVerbPersonal, String> mapPersonalFormOfVerb) {
+        for (Time someTime: Time.values()) {
             mapPersonalFormOfVerb = loopThroughPersonPersonalForm(somePerfectImperfect,someTime,mapPersonalFormOfVerb);
         }
         return mapPersonalFormOfVerb;
     }
 
-    HashMap<FormOfVerbPersonal, String> loopThroughPersonPersonalForm(PERFECTORIMPERFECT somePerfectImperfect, TIME someTime, HashMap<FormOfVerbPersonal, String> mapPersonalFormOfVerb) {
+    HashMap<FormOfVerbPersonal, String> loopThroughPersonPersonalForm(PerfectOrImperfect somePerfectImperfect, Time someTime, HashMap<FormOfVerbPersonal, String> mapPersonalFormOfVerb) {
         Scanner scannerWord = new Scanner(System.in);
         String word;
-        for (PRONOUN somePerson: PRONOUN.values()) {
+        for (Pronoun somePerson: Pronoun.values()) {
             word = scannerWord.nextLine();
             if (true) {
                 mapPersonalFormOfVerb.put(new FormOfVerbPersonal(somePerfectImperfect,someTime,somePerson),word);

@@ -1,17 +1,17 @@
 package pp.linguisticCategories;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 
 public abstract class LinguisticCategory {
-	private PARTOFSPEECH linguisticCategoryEnum;
+	private PartOfSpeech linguisticCategoryEnum;
 	private String formOfWord;
 
-	public LinguisticCategory(PARTOFSPEECH linguisticCategoryE) {
+	public LinguisticCategory(PartOfSpeech linguisticCategoryE) {
 		super();
 		this.linguisticCategoryEnum = linguisticCategoryE;
 	}
 
-	public PARTOFSPEECH getLinguisticCategoryE() {
+	public PartOfSpeech getLinguisticCategoryE() {
 		return linguisticCategoryEnum;
 	}
 
@@ -23,7 +23,7 @@ public abstract class LinguisticCategory {
 		this.formOfWord = formOfWord;
 	}
 
-	public LinguisticCategory(PARTOFSPEECH linguisticCategoryEnum, String formOfWord) {
+	public LinguisticCategory(PartOfSpeech linguisticCategoryEnum, String formOfWord) {
 		this.linguisticCategoryEnum = linguisticCategoryEnum;
 		this.formOfWord = formOfWord;
 	}

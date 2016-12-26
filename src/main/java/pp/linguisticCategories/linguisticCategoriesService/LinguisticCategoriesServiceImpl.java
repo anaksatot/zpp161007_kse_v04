@@ -1,6 +1,6 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
-import pp.grammaticalCategories.CASE;
+import pp.grammaticalCategories.Case;
 
 import java.util.ArrayList;
 
@@ -34,16 +34,16 @@ public class LinguisticCategoriesServiceImpl {
         System.out.println("3. середній");
     }
 
-    public ArrayList<CASE> defineListOfCasesOfNoun(){
-        ArrayList<CASE> CasesOfNoun = new ArrayList<CASE>();
-        CasesOfNoun.add(CASE.NOMINATIVE);
-        CasesOfNoun.add(CASE.GENITIVE);
-        CasesOfNoun.add(CASE.DATIVE);
-        CasesOfNoun.add(CASE.ACCUSATIVE);
-        CasesOfNoun.add(CASE.INSTRUMANTAL);
-        CasesOfNoun.add(CASE.LOCATIVE);
-        CasesOfNoun.add(CASE.VOCATIVE);
-        return CasesOfNoun;
+    public ArrayList<Case> defineListOfCasesOfNoun(){
+        ArrayList<Case> casesOfNoun = new ArrayList<Case>();
+        casesOfNoun.add(Case.NOMINATIVE);
+        casesOfNoun.add(Case.GENITIVE);
+        casesOfNoun.add(Case.DATIVE);
+        casesOfNoun.add(Case.ACCUSATIVE);
+        casesOfNoun.add(Case.INSTRUMANTAL);
+        casesOfNoun.add(Case.LOCATIVE);
+        casesOfNoun.add(Case.VOCATIVE);
+        return casesOfNoun;
     }
 
     public ArrayList<String> getListOfTypicalFormsOfVerbInUkrainianOut(){

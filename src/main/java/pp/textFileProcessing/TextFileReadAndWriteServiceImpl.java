@@ -10,17 +10,15 @@ public class TextFileReadAndWriteServiceImpl implements TextFileReadAndWriteServ
 
     public String read(String PathToFile) {
         StringBuilder sb = new StringBuilder();
-        try {
-            BufferedReader inBR = new BufferedReader(new FileReader(new File(PathToFile)));
+        try (BufferedReader inBR = new BufferedReader(new FileReader(new File(PathToFile)))) {
             String s;
             while ((s = inBR.readLine()) != null) {
                 sb.append(s);
                 sb.append("\n");
             }
-            inBR.close();
-
         } catch (IOException e) {
-            System.out.println("file not found");
+            System.out.println("file not readable");
+            return "";
         }
         return sb.toString();
     }
@@ -52,7 +50,7 @@ public class TextFileReadAndWriteServiceImpl implements TextFileReadAndWriteServ
     public String pathToTXTFile(){
 
         //return "c:\\Nazar\\Java\\Hobbit 4.txt";
-        return "e:\\TextForAnalys.txt";
+        return "e:\\TextForAnalys2.txt";
         //return "e:\\Гобіт.txt";
 
     }

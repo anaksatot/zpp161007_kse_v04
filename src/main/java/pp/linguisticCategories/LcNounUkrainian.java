@@ -1,24 +1,24 @@
 package pp.linguisticCategories;
 
-import pp.grammaticalCategories.GENDER;
-import pp.grammaticalCategories.NUMBER;
-import pp.grammaticalCategories.CASE;
+import pp.grammaticalCategories.Gender;
+import pp.grammaticalCategories.Number;
+import pp.grammaticalCategories.Case;
 import java.util.HashMap;
 
 public class LcNounUkrainian extends LcNoun{
 
-	private HashMap<NUMBER, String> singularOrPluralForms;
-	private GENDER gender;
-	private HashMap<CASE, String> casesOfWord;
+	private HashMap<Number, String> singularOrPluralForms;
+	private Gender gender;
+	private HashMap<Case, String> casesOfWord;
 	private static int accountOfWords;
 
 
 	public String getSingularForm(){
-		return singularOrPluralForms.get(NUMBER.SINGULAR);
+		return singularOrPluralForms.get(Number.SINGULAR);
 	}
 
 	public String getPluralForm(){
-		return singularOrPluralForms.get(NUMBER.PLURAL);
+		return singularOrPluralForms.get(Number.PLURAL);
 	}
 
 	public LcNounUkrainian(String formOfWord) {
@@ -35,27 +35,27 @@ public class LcNounUkrainian extends LcNoun{
 		return accountOfWords;
 	}
 
-	public HashMap<NUMBER, String> getSingularOrPluralForms() {
+	public HashMap<Number, String> getSingularOrPluralForms() {
 		return singularOrPluralForms;
 	}
 
-	public GENDER getGender() {
+	public Gender getGender() {
 		return gender;
 	}
 
-	public HashMap<CASE, String> getCasesOfWord() {
+	public HashMap<Case, String> getCasesOfWord() {
 		return casesOfWord;
 	}
 
-	public void setSingularOrPluralForms(HashMap<NUMBER, String> singularOrPluralForms) {
+	public void setSingularOrPluralForms(HashMap<Number, String> singularOrPluralForms) {
 		this.singularOrPluralForms = singularOrPluralForms;
 	}
 
-	public void setGender(GENDER gender) {
+	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
 
-	public void setCasesOfWord(HashMap<CASE, String> casesOfWord) {
+	public void setCasesOfWord(HashMap<Case, String> casesOfWord) {
 		this.casesOfWord = casesOfWord;
 	}
 

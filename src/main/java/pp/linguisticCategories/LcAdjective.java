@@ -1,10 +1,10 @@
 package pp.linguisticCategories;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 
 public abstract class LcAdjective extends LinguisticCategory{
 
-    public LcAdjective(PARTOFSPEECH linguisticCategoryEnum, String formOfWord) {
+    public LcAdjective(PartOfSpeech linguisticCategoryEnum, String formOfWord) {
         super(linguisticCategoryEnum, formOfWord);
     }
 }

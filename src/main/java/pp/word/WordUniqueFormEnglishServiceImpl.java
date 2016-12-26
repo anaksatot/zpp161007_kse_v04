@@ -6,13 +6,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WordUniqueFormEnglishServiceImpl implements WordUniqueFormService {
-    public void createOrUpdateWordUniqueForm(String tloJam) {
-        ArrayList<LinguisticCategory> linguisticCategories;
-        //1 get all WordUniqueFormi
-        //2 try find
-        //3 if not found interaction with human and create
-        WordUniqueForm wordUniqueForm = new WordUniqueFormUkrainianServiceImpl().createNewWordUniqueForm(tloJam);
-        //4 if found write some statistic
+    public void createOrUpdateWordUniqueForm(String formOfWord) {
+
     }
 
     @Override
@@ -21,7 +16,7 @@ public class WordUniqueFormEnglishServiceImpl implements WordUniqueFormService {
     }
 
     public WordUniqueForm createNewWordUniqueForm(String formOfWord) {
-        WordUniqueForm wordUniqueForm = new WordUniqueForm(formOfWord, LANGUAGE.ENGLISH);
+        WordUniqueForm wordUniqueForm = new WordUniqueForm(formOfWord, Language.ENGLISH);
         ArrayList<LinguisticCategory> linguisticCategoriesOfWordUniqueForm = new ArrayList<LinguisticCategory>();
         Scanner scannerName = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);

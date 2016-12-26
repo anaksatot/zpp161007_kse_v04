@@ -2,11 +2,12 @@ package pp.linguisticCategories.linguisticCategoriesService;
 
 import pp.linguisticCategories.FormOfVerbAdjective;
 import pp.linguisticCategories.FormsOfVerbAdjectiveConjugation;
-import pp.grammaticalCategories.GENDER;
-import pp.grammaticalCategories.PERFECTORIMPERFECT;
+import pp.grammaticalCategories.Gender;
+import pp.grammaticalCategories.PerfectOrImperfect;
 import pp.linguisticCategories.LCDefineDimension;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -27,23 +28,23 @@ public class FormsOfVerbAdjectiveConjugationServiceImpl {
     }
 
     FormsOfVerbAdjectiveConjugation defineAdjectiveFormOfVerbAllForms(String word) {
-        HashMap<FormOfVerbAdjective, String> mapAdjectiveFormOfVerb = new HashMap<FormOfVerbAdjective, String>();
+        Map<FormOfVerbAdjective, String> mapAdjectiveFormOfVerb = new HashMap<FormOfVerbAdjective, String>();
         mapAdjectiveFormOfVerb = loopThroughPerfectImperfectAdjectiveForm(mapAdjectiveFormOfVerb);
         return new FormsOfVerbAdjectiveConjugation(mapAdjectiveFormOfVerb);
     }
 
-    HashMap<FormOfVerbAdjective, String> loopThroughPerfectImperfectAdjectiveForm(HashMap<FormOfVerbAdjective, String> mapAdjectiveFormOfVerb) {
-        for (PERFECTORIMPERFECT somePerfectImperfect: PERFECTORIMPERFECT.values()) {
+    Map<FormOfVerbAdjective, String> loopThroughPerfectImperfectAdjectiveForm(Map<FormOfVerbAdjective, String> mapAdjectiveFormOfVerb) {
+        for (PerfectOrImperfect somePerfectImperfect: PerfectOrImperfect.values()) {
             mapAdjectiveFormOfVerb = loopThroughGenderAdjectiveForm(somePerfectImperfect,mapAdjectiveFormOfVerb);
             mapAdjectiveFormOfVerb = pluralWithoutGenderAdjectiveForm(somePerfectImperfect,mapAdjectiveFormOfVerb);
         }
         return mapAdjectiveFormOfVerb;
     }
 
-    HashMap<FormOfVerbAdjective, String>  loopThroughGenderAdjectiveForm(PERFECTORIMPERFECT somePerfectImperfect, HashMap<FormOfVerbAdjective, String> mapAdjectiveFormOfVerb) {
+    Map<FormOfVerbAdjective, String>  loopThroughGenderAdjectiveForm(PerfectOrImperfect somePerfectImperfect, Map<FormOfVerbAdjective, String> mapAdjectiveFormOfVerb) {
         Scanner scannerWord = new Scanner(System.in);
         String word;
-        for (GENDER someGender: GENDER.values()) {
+        for (Gender someGender: Gender.values()) {
             word = scannerWord.nextLine();
             if (true) {
                 mapAdjectiveFormOfVerb.put(new FormOfVerbAdjective(someGender,false,somePerfectImperfect),word);
@@ -52,7 +53,7 @@ public class FormsOfVerbAdjectiveConjugationServiceImpl {
         return mapAdjectiveFormOfVerb;
     }
 
-    HashMap<FormOfVerbAdjective, String> pluralWithoutGenderAdjectiveForm(PERFECTORIMPERFECT somePerfectImperfect, HashMap<FormOfVerbAdjective, String> mapAdjectiveFormOfVerb) {
+    Map<FormOfVerbAdjective, String> pluralWithoutGenderAdjectiveForm(PerfectOrImperfect somePerfectImperfect, Map<FormOfVerbAdjective, String> mapAdjectiveFormOfVerb) {
         Scanner scannerWord = new Scanner(System.in);
         String word = scannerWord.nextLine();
         if (true) {

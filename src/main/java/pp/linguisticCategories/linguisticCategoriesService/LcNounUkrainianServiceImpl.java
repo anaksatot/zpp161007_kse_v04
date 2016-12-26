@@ -1,8 +1,8 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
-import pp.grammaticalCategories.GENDER;
-import pp.grammaticalCategories.NUMBER;
-import pp.grammaticalCategories.CASE;
+import pp.grammaticalCategories.Gender;
+import pp.grammaticalCategories.Number;
+import pp.grammaticalCategories.Case;
 import pp.linguisticCategories.LcNoun;
 import pp.linguisticCategories.LcNounUkrainian;
 
@@ -15,22 +15,22 @@ import java.util.Scanner;
  */
 public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
 
-    public HashMap<NUMBER,String> defineSingularAndPluralForms(LcNounUkrainian lcNounUkrainian){
+    public HashMap<Number,String> defineSingularAndPluralForms(LcNounUkrainian lcNounUkrainian){
         new LinguisticCategoriesServiceImpl().listNumeralCasesOfNounInUkrainianOut();
-        HashMap<NUMBER,String>  singularOrPluralForms = new HashMap<NUMBER, String>();
+        HashMap<Number,String>  singularOrPluralForms = new HashMap<Number, String>();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         switch (n) {
             case 1:
-                singularOrPluralForms.put(NUMBER.SINGULAR, lcNounUkrainian.getFormOfWord());
+                singularOrPluralForms.put(Number.SINGULAR, lcNounUkrainian.getFormOfWord());
                 System.out.println(lcNounUkrainian.getFormOfWord());
                 return singularOrPluralForms;
             case 2:
-                 singularOrPluralForms.put(NUMBER.PLURAL, lcNounUkrainian.getFormOfWord());
+                 singularOrPluralForms.put(Number.PLURAL, lcNounUkrainian.getFormOfWord());
                 return singularOrPluralForms;
             case 3:
-                 singularOrPluralForms.put(NUMBER.SINGULAR, lcNounUkrainian.getFormOfWord());
-                singularOrPluralForms.put(NUMBER.PLURAL, lcNounUkrainian.getFormOfWord());
+                 singularOrPluralForms.put(Number.SINGULAR, lcNounUkrainian.getFormOfWord());
+                singularOrPluralForms.put(Number.PLURAL, lcNounUkrainian.getFormOfWord());
                 return singularOrPluralForms;
     default:
             System.out.println("невдалий номер позиції. спробуте ще раз");
@@ -38,31 +38,31 @@ public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
 }
 }
 
-    public HashMap<NUMBER,String> defineSingularAndPluralFormsForUniqueForm(LcNounUkrainian lcNounUkrainian){
+    public HashMap<Number,String> defineSingularAndPluralFormsForUniqueForm(LcNounUkrainian lcNounUkrainian){
         new LinguisticCategoriesServiceImpl().listNumeralCasesOfNounInUkrainianOut();
-        HashMap<NUMBER,String>  singularOrPluralForms = new HashMap<NUMBER, String>();
+        HashMap<Number,String>  singularOrPluralForms = new HashMap<Number, String>();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
 
         switch (n) {
             case 1:
-                singularOrPluralForms.put(NUMBER.SINGULAR, lcNounUkrainian.getFormOfWord());
+                singularOrPluralForms.put(Number.SINGULAR, lcNounUkrainian.getFormOfWord());
                 return singularOrPluralForms;
             case 2:
-                singularOrPluralForms.put(NUMBER.PLURAL, lcNounUkrainian.getFormOfWord());
+                singularOrPluralForms.put(Number.PLURAL, lcNounUkrainian.getFormOfWord());
                 return singularOrPluralForms;
             case 3:
-                singularOrPluralForms.put(NUMBER.SINGULAR, lcNounUkrainian.getFormOfWord());
-                singularOrPluralForms.put(NUMBER.PLURAL, lcNounUkrainian.getFormOfWord());
+                singularOrPluralForms.put(Number.SINGULAR, lcNounUkrainian.getFormOfWord());
+                singularOrPluralForms.put(Number.PLURAL, lcNounUkrainian.getFormOfWord());
                 return singularOrPluralForms;
             default:
                 System.out.println("невдалий номер позиції. спробуте ще раз");
-                singularOrPluralForms.put(NUMBER.SINGULAR, lcNounUkrainian.getFormOfWord());
+                singularOrPluralForms.put(Number.SINGULAR, lcNounUkrainian.getFormOfWord());
                 return singularOrPluralForms;
         }
     }
 
-    private GENDER defineGender(){
+    private Gender defineGender(){
         System.out.println("Введіть рід іменника");
         new LinguisticCategoriesServiceImpl().listGendersInUkrainianOut();
         Scanner scanner = new Scanner(System.in);
@@ -70,24 +70,24 @@ public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
         n = scanner.nextInt();
         switch (n) {
             case 1:
-                return GENDER.MALE;
+                return Gender.MALE;
             case 2:
-                return GENDER.FEMALE;
+                return Gender.FEMALE;
             case 3:
-                return GENDER.MEDIUM;
+                return Gender.MEDIUM;
             default:
                 System.out.println("невдалий номер позиції. спробуте ще раз");
-                return GENDER.MEDIUM;
+                return Gender.MEDIUM;
         }
     }
 
-    private HashMap<CASE, String> defineCasesOfNoun(LcNounUkrainian lcNounUkrainian, ArrayList<CASE> listOfCasesOfNoun){
+    private HashMap<Case, String> defineCasesOfNoun(LcNounUkrainian lcNounUkrainian, ArrayList<Case> listOfCasesOfNoun){
         System.out.println("Визначення відмінків іменника");
 
         Scanner scanner = new Scanner(System.in);
         String st;
-        HashMap<CASE, String> casesOfWord = new HashMap<CASE, String>();
-        for (CASE cases: listOfCasesOfNoun) {
+        HashMap<Case, String> casesOfWord = new HashMap<Case, String>();
+        for (Case cases: listOfCasesOfNoun) {
             System.out.println("Введіть "+cases.name() +" відмінок іменника");
             st = scanner.nextLine();
             casesOfWord.put(cases,st);
@@ -95,13 +95,13 @@ public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
         return casesOfWord;
     }
 
-    private HashMap<CASE, String> defineCasesOfNounForUniqueForm(LcNounUkrainian lcNounUkrainian, ArrayList<CASE> listOfCasesOfNoun){
+    private HashMap<Case, String> defineCasesOfNounForUniqueForm(LcNounUkrainian lcNounUkrainian, ArrayList<Case> listOfCasesOfNoun){
         System.out.println("Визначення відмінків іменника");
         Scanner scanner = new Scanner(System.in);
         int n=0;
-        HashMap<CASE, String> casesOfWord = new HashMap<CASE, String>();
-        HashMap<Integer, CASE> mapOfCases = new HashMap<Integer, CASE>();
-        for (CASE cases: listOfCasesOfNoun) {
+        HashMap<Case, String> casesOfWord = new HashMap<Case, String>();
+        HashMap<Integer, Case> mapOfCases = new HashMap<Integer, Case>();
+        for (Case cases: listOfCasesOfNoun) {
             ++n;
             System.out.println(n+". "+cases.name());
             mapOfCases.put(n,cases);

@@ -22,10 +22,7 @@ public class LcVerbUkrainianServiceImpl implements LcVerbUkrainianService{
         LcVerbUkrainian lcVerbUkrainian = new LcVerbUkrainian(word);
         Scanner scanner = new Scanner(System.in);
         outListOfTypicalFormsOfVerb();
-        //System.out.println("Введіть до скількох типових форм належить ця форма дієслова");
-        //int q = scanner.nextInt();
-        int q =1; // for another languiges it can be more forms
-        for (int i=0;i<q;i++){
+        while (true) {
             System.out.println("введіть номер форми дієслова:");
             int n = scanner.nextInt();
             switch (n) {
@@ -42,11 +39,13 @@ public class LcVerbUkrainianServiceImpl implements LcVerbUkrainianService{
                     lcVerbUkrainian.setFormOfVerbAdverb(defineAdverbLcVerbForm(word));
                     break;
                 case 5:
-                    lcVerbUkrainian.setFormOfVerbAdjective(new FormsOfVerbAdjectiveConjugationServiceImpl().defineAdjectiveForms(word,true));
+                    lcVerbUkrainian.setFormOfVerbAdjective(new FormsOfVerbAdjectiveConjugationServiceImpl().defineAdjectiveForms(word, true));
                     break;
                 default:
                     System.out.println("невдалий номер позиції. спробуте ще раз");
+                    continue;
             }
+            break;
         }
         System.out.println(lcVerbUkrainian);
         return lcVerbUkrainian;

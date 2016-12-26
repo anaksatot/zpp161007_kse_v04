@@ -1,5 +1,5 @@
 package pp.grammaticalCategories;
 
-public enum NUMBER {
+public enum Number {
 	SINGULAR, PLURAL;
 }

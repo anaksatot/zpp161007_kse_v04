@@ -1,12 +1,12 @@
 package pp.linguisticCategories;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 
 /**
  * Created by Admin on 09.12.2016.
  */
 public class LcNumeral extends LinguisticCategory{
-    public LcNumeral(PARTOFSPEECH linguisticCategoryEnum, String formOfWord) {
+    public LcNumeral(PartOfSpeech linguisticCategoryEnum, String formOfWord) {
         super(linguisticCategoryEnum, formOfWord);
     }
 }

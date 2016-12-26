@@ -1,6 +1,6 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 import pp.linguisticCategories.LcPronoun;
 import pp.linguisticCategories.LcPronounUkrainian;
 
@@ -9,6 +9,6 @@ import pp.linguisticCategories.LcPronounUkrainian;
  */
 public class LcPronounUkrainianServiceImpl {
     public LcPronoun defineLcPronoun(String word) {
-        return  new LcPronounUkrainian(PARTOFSPEECH.PRONOUN,word);
+        return  new LcPronounUkrainian(PartOfSpeech.PRONOUN,word);
     }
 }

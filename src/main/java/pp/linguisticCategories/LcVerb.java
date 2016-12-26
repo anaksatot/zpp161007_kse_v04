@@ -1,14 +1,14 @@
 package pp.linguisticCategories;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 
 public abstract class LcVerb extends LinguisticCategory{
 
 	public LcVerb() {
-		super(PARTOFSPEECH.VERB);
+		super(PartOfSpeech.VERB);
 	}
 
 	public LcVerb(String formOfWord) {
-		super(PARTOFSPEECH.VERB, formOfWord);
+		super(PartOfSpeech.VERB, formOfWord);
 	}
 }

@@ -1,6 +1,6 @@
 package pp.linguisticCategories.linguisticCategoriesService;
 
-import pp.grammaticalCategories.PARTOFSPEECH;
+import pp.grammaticalCategories.PartOfSpeech;
 import pp.linguisticCategories.LcConjunction;
 import pp.linguisticCategories.LcConjunctionUkrainian;
 
@@ -9,6 +9,6 @@ import pp.linguisticCategories.LcConjunctionUkrainian;
  */
 public class LcConjunctionUkrainianServiceImpl {
     public LcConjunction defineLcConjunction(String word) {
-        return new LcConjunctionUkrainian(PARTOFSPEECH.CONJUNCTION,word);
+        return new LcConjunctionUkrainian(PartOfSpeech.CONJUNCTION,word);
     }
 }

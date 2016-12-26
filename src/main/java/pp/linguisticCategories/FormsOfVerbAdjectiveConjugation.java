@@ -1,14 +1,15 @@
 package pp.linguisticCategories;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Admin on 30.11.2016.
  */
 public class FormsOfVerbAdjectiveConjugation {
-    private HashMap<FormOfVerbAdjective, String> formsOfVerbAdjective;
+    private Map<FormOfVerbAdjective, String> formsOfVerbAdjective;
 
-    public FormsOfVerbAdjectiveConjugation(HashMap<FormOfVerbAdjective, String> formsOfVerbAdjective) {
+    public FormsOfVerbAdjectiveConjugation(Map<FormOfVerbAdjective, String> formsOfVerbAdjective) {
         this.formsOfVerbAdjective = formsOfVerbAdjective;
     }
 
