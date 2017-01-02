@@ -15,14 +15,16 @@ import java.util.*;
 public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService {
 
     public void parsingTextOfUniqueWords(List<String> textOfFileDivideOnListWords) {
-
+        WordUniqueForm newWordUniqueForm;
         System.out.println("Start of text parsing");
         final File folder = new File("e:\\Develop\\json-jamu\\");
         HashMap<String, WordUniqueForm> allWordUniqueForm = getAllWordUniqueFormFronJSONfiles(folder);
         for (String word : textOfFileDivideOnListWords) {
             if (!allWordUniqueForm.containsKey(word)) {
                 try {
-                    new TextFileReadAndWriteServiceImpl().writeToJSONfile(stringForJSONParser(createNewWordUniqueForm(word)), word);
+                    newWordUniqueForm = createNewWordUniqueForm(word);
+                    new TextFileReadAndWriteServiceImpl().writeToJSONfile(stringForJSONParser(newWordUniqueForm), word);
+                    allWordUniqueForm.put(newWordUniqueForm.getFormOfWord(),newWordUniqueForm);
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
@@ -79,7 +81,7 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         Scanner scanner2 = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Визнаення слова: " + word.toUpperCase());
+            System.out.println("Визнаення слова: " + word);
             new LinguisticCategoriesServiceImpl().listOfLinguisticCategoryInUkrainianOut();
             int n = scanner2.nextInt();
             switch (n) {
