@@ -1,7 +1,8 @@
 package pp.linguisticCategories;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class LinguisticCategoryForms {
+public class LinguisticCategoryForms implements Serializable {
 	private boolean isUniqueLinguisticCategorie;
 	private ArrayList<LinguisticCategory> linguisticCategory;
 	public ArrayList<LinguisticCategory> getLinguisticCategories(){

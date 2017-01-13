@@ -17,8 +17,6 @@ public class TextFileDivideIntoWordsServiceImpl implements TextFileDivideIntoWor
             String nextOfWords = itr.next();
             if (nextOfWords.length() == 0 || isNumber(nextOfWords) || deleteExcessiveGroupOfSymbols(nextOfWords)) {
                 itr.remove();
-            } else {
-                itr.set(nextOfWords.toLowerCase());
             }
         }
         return listOfWords;

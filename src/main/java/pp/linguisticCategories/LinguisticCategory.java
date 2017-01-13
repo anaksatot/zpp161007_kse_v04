@@ -2,7 +2,9 @@ package pp.linguisticCategories;
 
 import pp.grammaticalCategories.PartOfSpeech;
 
-public abstract class LinguisticCategory {
+import java.io.Serializable;
+
+public abstract class LinguisticCategory implements Serializable {
 	private PartOfSpeech linguisticCategoryEnum;
 	private String formOfWord;
 

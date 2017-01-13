@@ -124,12 +124,13 @@ public class LcNounUkrainianServiceImpl implements LcNounUkranianService {
     }
 
     @Override
-    public LcNoun defineLcNounUniqueForm(String word) {
+    public LcNoun defineLcNounUniqueForm(String word, boolean inDetail) {
         LcNounUkrainian lcNounUkrainian = new LcNounUkrainian(word);
-//  //    temporarily swich off define gramatic categ.
-//        lcNounUkrainian.setSingularOrPluralForms(defineSingularAndPluralFormsForUniqueForm(lcNounUkrainian));
-//        lcNounUkrainian.setGender(defineGender());
-//        lcNounUkrainian.setCasesOfWord(defineCasesOfNounForUniqueForm(lcNounUkrainian,new LinguisticCategoriesServiceImpl().defineListOfCasesOfNoun()));
+        if (inDetail) {
+            lcNounUkrainian.setSingularOrPluralForms(defineSingularAndPluralFormsForUniqueForm(lcNounUkrainian));
+            lcNounUkrainian.setGender(defineGender());
+            lcNounUkrainian.setCasesOfWord(defineCasesOfNounForUniqueForm(lcNounUkrainian, new LinguisticCategoriesServiceImpl().defineListOfCasesOfNoun()));
+        }
         return lcNounUkrainian;
     }
 

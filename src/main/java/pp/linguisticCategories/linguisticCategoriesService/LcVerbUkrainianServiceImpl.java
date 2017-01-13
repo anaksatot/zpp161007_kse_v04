@@ -9,43 +9,45 @@ import java.util.Scanner;
 public class LcVerbUkrainianServiceImpl implements LcVerbUkrainianService{
 
     @Override
-    public LcVerb defineLcVerb(String word, boolean onlyThisForm) {
+    public LcVerb defineLcVerb(String word, boolean onlyThisForm, boolean inDetail) {
         if (onlyThisForm) {
-            return defineLcVerbUniqueForm(word);
+            return defineLcVerbUniqueForm(word, inDetail);
         }
         return null;
     }
 
     @Override
-    public LcVerb defineLcVerbUniqueForm(String word) {
+    public LcVerb defineLcVerbUniqueForm(String word, boolean inDetail) {
 
         LcVerbUkrainian lcVerbUkrainian = new LcVerbUkrainian(word);
-        Scanner scanner = new Scanner(System.in);
-        outListOfTypicalFormsOfVerb();
-        while (true) {
-            System.out.println("введіть номер форми дієслова:");
-            int n = scanner.nextInt();
-            switch (n) {
-                case 1:
-                    lcVerbUkrainian.setFormOfVerbInfinitive(defineInfinitiveLcVerbForm(word));
-                    break;
-                case 2:
-                    lcVerbUkrainian.setFormOfVerbPersonal(new FormsOfVerbPersonalConjugationServiceImpl().definePersonalForms(word, true));
-                    break;
-                case 3:
-                    lcVerbUkrainian.setFormOfVerbImpersonal(defineImpersonLcVerbForm(word));
-                    break;
-                case 4:
-                    lcVerbUkrainian.setFormOfVerbAdverb(defineAdverbLcVerbForm(word));
-                    break;
-                case 5:
-                    lcVerbUkrainian.setFormOfVerbAdjective(new FormsOfVerbAdjectiveConjugationServiceImpl().defineAdjectiveForms(word, true));
-                    break;
-                default:
-                    System.out.println("невдалий номер позиції. спробуте ще раз");
-                    continue;
+        if (inDetail) {
+            Scanner scanner = new Scanner(System.in);
+            outListOfTypicalFormsOfVerb();
+            while (true) {
+                System.out.println("введіть номер форми дієслова:");
+                int n = scanner.nextInt();
+                switch (n) {
+                    case 1:
+                        lcVerbUkrainian.setFormOfVerbInfinitive(defineInfinitiveLcVerbForm(word));
+                        break;
+                    case 2:
+                        lcVerbUkrainian.setFormOfVerbPersonal(new FormsOfVerbPersonalConjugationServiceImpl().definePersonalForms(word, true));
+                        break;
+                    case 3:
+                        lcVerbUkrainian.setFormOfVerbImpersonal(defineImpersonLcVerbForm(word));
+                        break;
+                    case 4:
+                        lcVerbUkrainian.setFormOfVerbAdverb(defineAdverbLcVerbForm(word));
+                        break;
+                    case 5:
+                        lcVerbUkrainian.setFormOfVerbAdjective(new FormsOfVerbAdjectiveConjugationServiceImpl().defineAdjectiveForms(word, true));
+                        break;
+                    default:
+                        System.out.println("невдалий номер позиції. спробуте ще раз");
+                        continue;
+                }
+                break;
             }
-            break;
         }
         System.out.println(lcVerbUkrainian);
         return lcVerbUkrainian;

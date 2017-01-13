@@ -6,6 +6,6 @@ public interface LcNounUkranianService extends LcNounService{
 
     LcNoun defineLcNoun(String word);
 
-    LcNoun defineLcNounUniqueForm(String word);
+    LcNoun defineLcNounUniqueForm(String word, boolean inDetail);
 
 }
