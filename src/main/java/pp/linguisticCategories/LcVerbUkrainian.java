@@ -1,6 +1,7 @@
 package pp.linguisticCategories;
 
 public class LcVerbUkrainian extends LcVerb {
+    private static int accountOfWordsLC;
     private String formOfVerbInfinitive;
     private FormsOfVerbPersonalConjugation formOfVerbPersonal;
     private String formOfVerbImpersonal;
@@ -9,6 +10,7 @@ public class LcVerbUkrainian extends LcVerb {
 
     public LcVerbUkrainian(String formOfWord) {
         super(formOfWord);
+        ++accountOfWordsLC;
     }
 
     public void setFormOfVerbInfinitive(String infinitiveForm) {
@@ -29,6 +31,10 @@ public class LcVerbUkrainian extends LcVerb {
 
     public void setFormOfVerbAdjective(FormsOfVerbAdjectiveConjugation formOfVerbAdjective) {
         this.formOfVerbAdjective = formOfVerbAdjective;
+    }
+
+    public static int getAccountOfWordsLC() {
+        return accountOfWordsLC;
     }
 
     @Override

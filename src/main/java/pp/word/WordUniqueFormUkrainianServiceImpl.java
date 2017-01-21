@@ -19,7 +19,8 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
         WordUniqueForm newWordUniqueForm;
         System.out.println("Start of text parsing");
 
-        boolean inDetail = modeIsInDetail();
+        //boolean inDetail = modeIsInDetail();
+        boolean inDetail = false;
         final File folder = new File("e:\\Develop\\json-jamu\\");
         Map<String, WordUniqueForm> allWordUniqueForm = getAllWordUniqueFormFromJSONfiles(folder);
         for (String word : textOfFileDivideOnListWords) {
@@ -76,12 +77,13 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
     public String stringForJSONParser(WordUniqueForm wordUniqueForm) {
 
         String stForJsonParser = "{" + "\"" + "formOfWord" + "\"" + ":" + "\"" + wordUniqueForm.getFormOfWord() + "\"" + "," + "\"" + "quantitySymbols" + "\""
-                + ":" + wordUniqueForm.getQuantiySymbols() + "," + "\"" + "id" + "\"" + ":" + wordUniqueForm.getUniqueIndex();
+                + ":" + wordUniqueForm.getQuantiySymbols() + "," + "\"" + "id" + "\"" + ":" + "\""+ wordUniqueForm.getUniqueIndex()+ "\"";
         String stForJsonParserLC = "";
         for (LinguisticCategory lingCategory : wordUniqueForm.getLinguisticCategoryForms().getLinguisticCategories()) {
             stForJsonParserLC = stForJsonParserLC + new LCForJSONImpl().getStringLCForJsonParser(lingCategory);
         }
         stForJsonParser = stForJsonParser + "," + stForJsonParserLC + "}";
+        System.out.println(stForJsonParser);
         return stForJsonParser;
     }
 

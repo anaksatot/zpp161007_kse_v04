@@ -4,26 +4,29 @@ import pp.linguisticCategories.Language;
 import pp.linguisticCategories.LinguisticCategoryForms;
 
 import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
+import java.util.Random;
 
 public class WordUniqueForm implements Serializable {
 
 	private String formOfWord;
 	private String formOfWordFirstLetterCapital;
 	private String formOfWordInLowerCase;
-	private String formOfWordInUpperCase;
+	private String formOfWordInCapitalCase;
 	private String formOfWordStrangeCaseOrder;
 	private int quantiySymbols;
-	private long uniqueIndex;
+	private String uniqueIndex;
 	private Language language;
 	private LinguisticCategoryForms linguisticCategoryForms;
-	private static int accountOfWords;
+	private static int accountOfWordsCurrentText;
 
 	public WordUniqueForm(String formOfWord,Language language) {
 		this.formOfWord = formOfWord.toLowerCase();
 		this.language = language;
 		this.quantiySymbols = formOfWord.length();
-		setFormOfWordFirstLetterCapital(formOfWord);
-		++accountOfWords;
+		this.uniqueIndex = defineRandomUniqueIndex(10);
+		checkAndWriteFormsWithCapitalAndLowerLetters(formOfWord);
+		++accountOfWordsCurrentText;
 	}
 
 	public String getFormOfWord() {
@@ -34,7 +37,7 @@ public class WordUniqueForm implements Serializable {
 		return quantiySymbols;
 	}
 
-	public long getUniqueIndex() {
+	public String getUniqueIndex() {
 		return uniqueIndex;
 	}
 
@@ -46,8 +49,27 @@ public class WordUniqueForm implements Serializable {
 		this.linguisticCategoryForms = linguisticCategoryForms;
 	}
 
+	private String defineRandomUniqueIndex(int numberOfWords) {
+		String index = "";
+		int n;
+		Random rand = new Random();
+		for (int i=0; i<16;i++) {
+			n = rand.nextInt(16);
+			String n16 = Integer.toHexString(n);
+			index = index + n16;
+		}
+		String numberOfWords16 = Integer.toHexString(numberOfWords);
+		System.out.println(numberOfWords16);
+		for (int i=0; i<16-numberOfWords16.length();i++) {
+			index = index + "0";
+		}
+		index = index + numberOfWords16;
+		System.out.println(index);
+		return index;
+	}
+
 	public static int getAccountOfWords() {
-		return accountOfWords;
+		return accountOfWordsCurrentText;
 	}
 
 	public LinguisticCategoryForms getLinguisticCategoryForms() {
@@ -60,7 +82,7 @@ public class WordUniqueForm implements Serializable {
 				"formOfWord='" + formOfWord + '\'' +
 				", formOfWordFirstLetterCapital='" + formOfWordFirstLetterCapital + '\'' +
 				", formOfWordInLowerCase='" + formOfWordInLowerCase + '\'' +
-				", formOfWordInUpperCase='" + formOfWordInUpperCase + '\'' +
+				", formOfWordInUpperCase='" + formOfWordInCapitalCase + '\'' +
 				", formOfWordStrangeCaseOrder='" + formOfWordStrangeCaseOrder + '\'' +
 				", quantiySymbols=" + quantiySymbols +
 				", uniqueIndex=" + uniqueIndex +
@@ -70,16 +92,7 @@ public class WordUniqueForm implements Serializable {
 	}
 
 	public void setFormOfWordFirstLetterCapital(String word) {
-		System.out.println("U-------------U");
-		System.out.println(word.substring(0,1));
-		System.out.println(word.substring(0,1).matches("^[А-Я]"));
-		String ws = word.substring(1);
-		System.out.println((word.substring(1).length()));
-		System.out.println((ws.matches("^[а-я]")));
-		System.out.println((word.substring(0,1).matches("^[А-Я]")&&word.substring(1).matches("^[а-я]$")));
-		if (word.substring(0,1).matches("^[А-Я]")&&word.substring(1).matches("^[а-я]$")) {
-			this.formOfWordFirstLetterCapital = word;
-		}
+		this.formOfWordFirstLetterCapital= word;
 
 	}
 
@@ -87,8 +100,12 @@ public class WordUniqueForm implements Serializable {
 		this.formOfWordInLowerCase = word;
 	}
 
-	public void setFormOfWordInUpperCase(String word) {
-		this.formOfWordInUpperCase = word;
+	public void setFormOfWordInCapitalCase(String word) {
+		this.formOfWordInCapitalCase = word;
+	}
+
+	public void setFormOfWordStrangeCaseOrder(String word) {
+		this.formOfWordStrangeCaseOrder = word;
 	}
 
 	public boolean isEmptyFormOfWordFirstLetterCapital() {
@@ -99,38 +116,63 @@ public class WordUniqueForm implements Serializable {
 		return this.formOfWordInLowerCase == null || this.formOfWordInLowerCase.isEmpty();
 	}
 
-	public boolean isEmptyFormOfWordInUpperCase() {
-		return this.formOfWordInUpperCase == null || this.formOfWordInUpperCase.isEmpty();
+	public boolean isEmptyFormOfWordInCapitalCase() {
+		return this.formOfWordInCapitalCase == null || this.formOfWordInCapitalCase.isEmpty();
 	}
 
 	public boolean isEmptyFormOfWordStrangeCaseOrder() {
 		return this.formOfWordStrangeCaseOrder == null || this.formOfWordStrangeCaseOrder.isEmpty();
 	}
 
-	public boolean checkAndWriteFormsWithCapitalAndLowerLetters(String word) {
+	public boolean checkAndWriteFormsWithCapitalAndLowerLetters_test(String word) {
+
 		System.out.println(word);
-		System.out.println(word.substring(1));
-		System.out.println(word.substring(1).matches("[а-я]+"));
-		//System.out.println((int)"і");
-	//	System.out.println((char)179);
-		System.out.println(word.substring(1).matches("[char[179]]+"));
-//		if (wordUniqueForm.isEmptyFormOfWordFirstLetterCapital() && (word.matches("[а-я ]*"))) {
-//			wordUniqueForm.setFormOfWordInLowerCase(word);word.matches("[а-я]+")||word.matches("[і]+")
-//			return true;char
+		// char charI = (char) 1110;
+		char charJi = 't';
+		char charJ = "t".toCharArray()[0];
+		char charJi16 = '\u0074'; // t
+		char charJi17 = (char) 116; // t
+
+		// System.out.println(charI);
+		System.out.println(charJi);
+		System.out.println((int) charJ);
+		System.out.println((int) charJi16);
+		System.out.println(charJi17);
+		System.out.println(word.substring(0,1).toCharArray()[0]);
+		System.out.println((int) word.substring(0,1).toCharArray()[0]);
+		//System.out.println((int) c.charValue());
+//		for (int i=1100; i<1135;i++ ) {
+//			System.out.println((char) i);
 //		}
-		if (this.isEmptyFormOfWordInLowerCase() && (word.matches("[а-я]+")||word.matches("[і]+"))) {
+		System.out.println((int) "t".toCharArray()[0]);
+		System.out.println( word.charAt(0));
+		System.out.println("-------------");
+		if (this.isEmptyFormOfWordInLowerCase() && (word.substring(0,1).matches("[А-Я\\u0406\\u0407\\u0490\\u0404]")&&word.substring(1).matches("[а-я-\\u0456\\u0457\\u0491\\u0454]+"))) {
 			this.setFormOfWordInLowerCase(word);
 			return true;
 		}
-		if (this.isEmptyFormOfWordInUpperCase() && (word.matches("[А-Я]+"))) {
-			this.setFormOfWordInLowerCase(word);
-			return true;
-		}
-//		if (wordUniqueForm.isEmptyFormOfWordStrangeCaseOrder() && (word.matches("[а-я ]*"))) {
-//			wordUniqueForm.setFormOfWordInLowerCase(word);
-//			return true;
-//		}
 		return false;
 	}
 
+	public boolean checkAndWriteFormsWithCapitalAndLowerLetters(String word) {
+
+		if (this.isEmptyFormOfWordFirstLetterCapital() && (word.substring(0,1).matches("[А-Я\\u0406\\u0407\\u0490\\u0404]")&&word.substring(1).matches("[а-я-\\u0456\\u0457\\u0491\\u0454]+"))) {
+			this.setFormOfWordFirstLetterCapital(word);
+			return true;
+		}
+		if (this.isEmptyFormOfWordInLowerCase() && (word.matches("[а-я-\\u0456\\u0457\\u0491\\u0454]+"))) {
+			this.setFormOfWordInLowerCase(word);
+			return true;
+		}
+
+		if (this.isEmptyFormOfWordInCapitalCase() && (word.matches("[А-Я\\u0406\\u0407\\u0490\\u0404]+"))) {
+			this.setFormOfWordInCapitalCase(word);
+			return true;
+		}
+		if (this.isEmptyFormOfWordStrangeCaseOrder() && (word.matches("[А-Я\\u0406\\u0407\\u0490\\u0404а-я-\\u0456\\u0457\\u0491\\u0454]+"))) {
+			this.setFormOfWordStrangeCaseOrder(word);
+			return true;
+		}
+		return false;
+	}
 }

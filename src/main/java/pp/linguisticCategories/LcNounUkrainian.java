@@ -10,7 +10,7 @@ public class LcNounUkrainian extends LcNoun{
 	private HashMap<Number, String> singularOrPluralForms;
 	private Gender gender;
 	private HashMap<Case, String> casesOfWord;
-	private static int accountOfWords;
+	private static int accountOfWordsLC;
 
 
 	public String getSingularForm(){
@@ -23,16 +23,16 @@ public class LcNounUkrainian extends LcNoun{
 
 	public LcNounUkrainian(String formOfWord) {
 		super(formOfWord);
-		accountOfWords = accountOfWords+1;
+		++accountOfWordsLC;
 	}
 
 	public LcNounUkrainian(String formOfWord,boolean forUniqueForm) {
 		super(formOfWord);
-		accountOfWords = accountOfWords+1;
+		++accountOfWordsLC;
 	}
 
 	public static int getAccountOfWords() {
-		return accountOfWords;
+		return accountOfWordsLC;
 	}
 
 	public HashMap<Number, String> getSingularOrPluralForms() {
