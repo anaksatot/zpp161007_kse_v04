@@ -33,7 +33,7 @@ public class LcVerbUkrainian extends LcVerb {
         this.formOfVerbAdjective = formOfVerbAdjective;
     }
 
-    public static int getAccountOfWordsLC() {
+    public static Integer getAccountOfWordsLC() {
         return accountOfWordsLC;
     }
 

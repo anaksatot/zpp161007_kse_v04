@@ -8,8 +8,8 @@ import pp.linguisticCategories.LinguisticCategoryForms;
 import pp.linguisticCategories.linguisticCategoriesService.*;
 import pp.textFileProcessing.TextFileImproveServiceImpl;
 import pp.textFileProcessing.TextFileReadAndWriteServiceImpl;
+import pp.xmlFileProcessing.XMLfileReadAndWriteServiceImpl;
 
-import java.awt.event.KeyEvent;
 import java.io.*;
 import java.util.*;
 
@@ -18,10 +18,11 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
     public void parsingTextOfUniqueWords(List<String> textOfFileDivideOnListWords) {
         WordUniqueForm newWordUniqueForm;
         System.out.println("Start of text parsing");
-
+        new XMLfileReadAndWriteServiceImpl().readFromXMLStatisticInformation();
         //boolean inDetail = modeIsInDetail();
         boolean inDetail = false;
-        final File folder = new File("e:\\Develop\\json-jamu\\");
+        //final File folder = new File("e:\\Develop\\json-jamu\\");
+        final File folder = new File("c:\\Nazar\\json-jamu\\");
         Map<String, WordUniqueForm> allWordUniqueForm = getAllWordUniqueFormFromJSONfiles(folder);
         for (String word : textOfFileDivideOnListWords) {
             if (!allWordUniqueForm.containsKey(word.toLowerCase())) {
@@ -42,7 +43,7 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
             }
             // else {new TextFileReadAndWriteServiceImpl().deserializeWordUniqueForm(word);}
         }
-
+        new XMLfileReadAndWriteServiceImpl().saveToXMLStatisticInformation();
     }
 
     public Map<String, WordUniqueForm> getAllWordUniqueFormFromJSONfiles(final File folder) {
@@ -54,9 +55,6 @@ public class WordUniqueFormUkrainianServiceImpl implements WordUniqueFormService
 
             }
         }
-//        for (Map.Entry<String, WordUniqueForm> wordUniqueFormEntry:allWordUniqueForm.entrySet()) {
-//            System.out.println(wordUniqueFormEntry.getValue().toString());
-//        }
         return allWordUniqueForm;
     }
 

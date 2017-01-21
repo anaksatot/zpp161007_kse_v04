@@ -12,7 +12,7 @@ public class LcNumeralUkrainian extends LcNumeral {
         ++accountOfWordsLC;
     }
 
-    public static int getAccountOfWordsLC() {
+    public static Integer getAccountOfWordsLC() {
         return accountOfWordsLC;
     }
 }

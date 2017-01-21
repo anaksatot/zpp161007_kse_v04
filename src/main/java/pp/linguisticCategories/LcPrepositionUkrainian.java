@@ -12,7 +12,7 @@ public class LcPrepositionUkrainian extends LcPreposition {
         ++accountOfWordsLC;
     }
 
-    public static int getAccountOfWordsLC() {
+    public static Integer getAccountOfWordsLC() {
         return accountOfWordsLC;
     }
 }

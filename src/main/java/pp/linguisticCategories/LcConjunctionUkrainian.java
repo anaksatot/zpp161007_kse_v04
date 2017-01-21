@@ -12,7 +12,7 @@ public class LcConjunctionUkrainian extends LcConjunction {
         ++accountOfWordsLC;
     }
 
-    public static int getAccountOfWordsLC() {
+    public static Integer getAccountOfWordsLC() {
         return accountOfWordsLC;
     }
 }

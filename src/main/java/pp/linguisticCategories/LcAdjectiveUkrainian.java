@@ -1,6 +1,5 @@
 package pp.linguisticCategories;
 
-import jdk.nashorn.internal.objects.NativeRegExp;
 import pp.grammaticalCategories.PartOfSpeech;
 
 /**
@@ -14,7 +13,7 @@ public class LcAdjectiveUkrainian extends LcAdjective {
         System.out.println(accountOfWordsLC);
     }
 
-    public static int getAccountOfWordsLC() {
+    public static Integer getAccountOfWordsLC() {
         return accountOfWordsLC;
     }
 

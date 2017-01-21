@@ -2,9 +2,9 @@ package pp.word;
 
 import pp.linguisticCategories.Language;
 import pp.linguisticCategories.LinguisticCategoryForms;
+import pp.xmlFileProcessing.XMLfileReadAndWriteServiceImpl;
 
 import java.io.Serializable;
-import java.io.UnsupportedEncodingException;
 import java.util.Random;
 
 public class WordUniqueForm implements Serializable {
@@ -14,16 +14,19 @@ public class WordUniqueForm implements Serializable {
 	private String formOfWordInLowerCase;
 	private String formOfWordInCapitalCase;
 	private String formOfWordStrangeCaseOrder;
-	private int quantiySymbols;
+	private int quantityOfSymbols;
 	private String uniqueIndex;
 	private Language language;
 	private LinguisticCategoryForms linguisticCategoryForms;
-	private static int accountOfWordsCurrentText;
+	private static Integer accountOfWordsCurrentText;
 
+	static {
+		accountOfWordsCurrentText = XMLfileReadAndWriteServiceImpl.readFromXMLStatisticInformation().get("totalAccountOfWords");
+	}
 	public WordUniqueForm(String formOfWord,Language language) {
 		this.formOfWord = formOfWord.toLowerCase();
 		this.language = language;
-		this.quantiySymbols = formOfWord.length();
+		this.quantityOfSymbols = formOfWord.length();
 		this.uniqueIndex = defineRandomUniqueIndex(10);
 		checkAndWriteFormsWithCapitalAndLowerLetters(formOfWord);
 		++accountOfWordsCurrentText;
@@ -34,7 +37,7 @@ public class WordUniqueForm implements Serializable {
 	}
 
 	public int getQuantiySymbols() {
-		return quantiySymbols;
+		return quantityOfSymbols;
 	}
 
 	public String getUniqueIndex() {
@@ -59,16 +62,14 @@ public class WordUniqueForm implements Serializable {
 			index = index + n16;
 		}
 		String numberOfWords16 = Integer.toHexString(numberOfWords);
-		System.out.println(numberOfWords16);
 		for (int i=0; i<16-numberOfWords16.length();i++) {
 			index = index + "0";
 		}
 		index = index + numberOfWords16;
-		System.out.println(index);
 		return index;
 	}
 
-	public static int getAccountOfWords() {
+	public static Integer getAccountOfWords() {
 		return accountOfWordsCurrentText;
 	}
 
@@ -84,7 +85,7 @@ public class WordUniqueForm implements Serializable {
 				", formOfWordInLowerCase='" + formOfWordInLowerCase + '\'' +
 				", formOfWordInUpperCase='" + formOfWordInCapitalCase + '\'' +
 				", formOfWordStrangeCaseOrder='" + formOfWordStrangeCaseOrder + '\'' +
-				", quantiySymbols=" + quantiySymbols +
+				", quantityOfSymbols=" + quantityOfSymbols +
 				", uniqueIndex=" + uniqueIndex +
 				", language=" + language +
 				", linguisticCategoryForms=" + linguisticCategoryForms +

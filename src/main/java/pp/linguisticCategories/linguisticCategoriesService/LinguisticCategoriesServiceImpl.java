@@ -3,6 +3,8 @@ package pp.linguisticCategories.linguisticCategoriesService;
 import pp.grammaticalCategories.Case;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Admin on 03.12.2016.
@@ -56,4 +58,17 @@ public class LinguisticCategoriesServiceImpl {
         return TypicalFormsOfVerb;
     }
 
+    public static Map<String, Integer> listOfStatisticItem() {
+        Map<String, Integer> statasticItem = new HashMap<String, Integer>();
+        statasticItem.put("totalAccountOfWords", 0);
+        statasticItem.put("totalAccountOfWordsAdjective", 0);
+        statasticItem.put("totalAccountOfWordsAdverb", 0);
+        statasticItem.put("totalAccountOfWordsConjunction", 0);
+        statasticItem.put("totalAccountOfWordsNoun", 0);
+        statasticItem.put("totalAccountOfWordsNumeral", 0);
+        statasticItem.put("totalAccountOfWordsPreposition", 0);
+        statasticItem.put("totalAccountOfWordsPronoun", 0);
+        statasticItem.put("totalAccountOfWordsVerb", 0);
+        return statasticItem;
+    }
 }

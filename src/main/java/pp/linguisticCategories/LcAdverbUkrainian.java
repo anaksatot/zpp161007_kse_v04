@@ -11,7 +11,7 @@ public class LcAdverbUkrainian extends LcAdverb{
         System.out.println(accountOfWordsLC);
     }
 
-    public static int getAccountOfWordsLC() {
+    public static Integer getAccountOfWordsLC() {
         return accountOfWordsLC;
     }
 

@@ -31,7 +31,7 @@ public class LcNounUkrainian extends LcNoun{
 		++accountOfWordsLC;
 	}
 
-	public static int getAccountOfWords() {
+	public static Integer getAccountOfWordsLC() {
 		return accountOfWordsLC;
 	}
 

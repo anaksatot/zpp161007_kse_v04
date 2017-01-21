@@ -44,14 +44,14 @@ public class TextFileReadAndWriteServiceImpl implements TextFileReadAndWriteServ
     }
 
     public String directoryForSaveJSONfilesWordUniqueForm(){
-        // return "c:\\Nazar\\json-jamu\\";
-        return "e:\\Develop\\json-jamu\\";
+         return "c:\\Nazar\\json-jamu\\";
+        //return "e:\\Develop\\json-jamu\\";
     }
 
     public String pathToTXTFile(){
 
-        //return "c:\\Nazar\\Java\\Hobbit 4.txt";
-        return "e:\\TextForAnalys2.txt";
+        return "c:\\Nazar\\Java\\Hobbit 4.txt";
+        //return "e:\\TextForAnalys2.txt";
         //return "e:\\Гобіт.txt";
 
     }

@@ -12,7 +12,7 @@ public class LcPronounUkrainian extends LcPronoun {
         ++accountOfWordsLC;
     }
 
-    public static int getAccountOfWordsLC() {
+    public static Integer getAccountOfWordsLC() {
         return accountOfWordsLC;
     }
 }

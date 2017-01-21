@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../jar/json-simple-1.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../Java/gson-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,7 +37,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../jar/gson-2.3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../Java/json-simple-1.1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -46,7 +46,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../jar/guava-16.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../Java/jar_files/guava-16.0.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
