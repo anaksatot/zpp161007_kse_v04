@@ -1,12 +1,17 @@
 package pp.linguisticCategories;
 
+import pp.xmlFileProcessing.XMLfileReadAndWriteServiceImpl;
+
 public class LcVerbUkrainian extends LcVerb {
-    private static int accountOfWordsLC;
     private String formOfVerbInfinitive;
     private FormsOfVerbPersonalConjugation formOfVerbPersonal;
     private String formOfVerbImpersonal;
     private String formOfVerbAdverb;
     private FormsOfVerbAdjectiveConjugation formOfVerbAdjective;
+    private static int accountOfWordsLC;
+    static {
+        accountOfWordsLC = XMLfileReadAndWriteServiceImpl.readFromXMLStatisticInformation().get("totalAccountOfWordsVerb");
+    }
 
     public LcVerbUkrainian(String formOfWord) {
         super(formOfWord);

@@ -20,4 +20,9 @@ public class TextFileImproveServiceImpl implements TextFileImproveService {
 	public  boolean fileIsJSON(String pathToFile) {
 		return Files.getFileExtension(pathToFile).equals("json");
 	}
+
+	@Override
+	public String thisFileAlreadyTaken(int lengthOfText, String firstHundredSymbols) {
+		return "";
+	}
 }

@@ -3,16 +3,13 @@ package pp.word;
 import pp.linguisticCategories.*;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class WordUniqueFormEnglishServiceImpl implements WordUniqueFormService {
     public void createOrUpdateWordUniqueForm(String formOfWord) {
 
-    }
-
-    @Override
-    public String firstXSystemOrthographyOfWord(WordUniqueForm wordUniqueForm) {
-        return "";
     }
 
     public WordUniqueForm createNewWordUniqueForm(String formOfWord) {
@@ -57,4 +54,13 @@ public class WordUniqueFormEnglishServiceImpl implements WordUniqueFormService {
     }
 
 
+    @Override
+    public String firstXSystemOrthographyOfWord(String word, Language language) {
+        return "";
+    }
+
+    @Override
+    public Map<WordUniqueForm, Integer> parsingTextIntoUniqueWords(List<String> textOfFileDivideOnListWords) {
+        return null;
+    }
 }

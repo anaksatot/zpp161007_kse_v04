@@ -3,6 +3,8 @@ package pp.linguisticCategories;
 import pp.grammaticalCategories.Gender;
 import pp.grammaticalCategories.Number;
 import pp.grammaticalCategories.Case;
+import pp.xmlFileProcessing.XMLfileReadAndWriteServiceImpl;
+
 import java.util.HashMap;
 
 public class LcNounUkrainian extends LcNoun{
@@ -11,7 +13,9 @@ public class LcNounUkrainian extends LcNoun{
 	private Gender gender;
 	private HashMap<Case, String> casesOfWord;
 	private static int accountOfWordsLC;
-
+	static {
+		accountOfWordsLC = XMLfileReadAndWriteServiceImpl.readFromXMLStatisticInformation().get("totalAccountOfWordsNoun");
+	}
 
 	public String getSingularForm(){
 		return singularOrPluralForms.get(Number.SINGULAR);

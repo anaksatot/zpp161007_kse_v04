@@ -6,12 +6,17 @@ import org.json.simple.parser.ParseException;
 import pp.word.WordUniqueForm;
 
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Map;
 
 public class TextFileReadAndWriteServiceImpl implements TextFileReadAndWriteService {
 
     public String read(String PathToFile) {
         StringBuilder sb = new StringBuilder();
-        try (BufferedReader inBR = new BufferedReader(new FileReader(new File(PathToFile)))) {
+        try {
+            //BufferedReader inBR = new BufferedReader(new FileReader(new File(PathToFile)));
+            BufferedReader inBR = new BufferedReader(new InputStreamReader(new FileInputStream(PathToFile), "UTF-8" ));
             String s;
             while ((s = inBR.readLine()) != null) {
                 sb.append(s);
@@ -29,11 +34,9 @@ public class TextFileReadAndWriteServiceImpl implements TextFileReadAndWriteServ
         JSONParser parser = new JSONParser();
         JSONObject WordUniqueFormJSONObj = (JSONObject) parser.parse(stForJSONParser);
         try {
-            File file=new File(directoryForSaveJSONfilesWordUniqueForm()+formOfWord.toLowerCase()+".json");
+            File file=new File(directoryForSaveJSONfilesWordUniqueForm()+"\\"+formOfWord.toLowerCase()+".json");
             file.createNewFile();
             FileWriter fileWriter = new FileWriter(file);
-            System.out.println("Writing JSON object to file "+file.getCanonicalPath());
-            System.out.print(WordUniqueFormJSONObj);
             fileWriter.write(WordUniqueFormJSONObj.toJSONString());
             fileWriter.flush();
             fileWriter.close();
@@ -43,15 +46,26 @@ public class TextFileReadAndWriteServiceImpl implements TextFileReadAndWriteServ
         }
     }
 
-    public String directoryForSaveJSONfilesWordUniqueForm(){
-         return "c:\\Nazar\\json-jamu\\";
-        //return "e:\\Develop\\json-jamu\\";
+    public void writeToJSONfilesStatistic(Map<WordUniqueForm,Integer> listWordsOfCurrentText){
+        for (Map.Entry<WordUniqueForm,Integer>wordOfCurrentText: listWordsOfCurrentText.entrySet()) {
+            wordOfCurrentText.getKey().setAccountWordsOfThisUniqueForm(wordOfCurrentText.getValue()+wordOfCurrentText.getKey().getAccountWordsOfThisUniqueForm());
+            try {
+                new TextFileReadAndWriteServiceImpl().writeToJSONfile(new JsonFileReadAndWriteServiceImpl().stringForJSONParserWordUniqueForm(wordOfCurrentText.getKey()), wordOfCurrentText.getKey().getFormOfWord());
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static String directoryForSaveJSONfilesWordUniqueForm(){
+        Path path_json_files = Paths.get(new File("").getAbsolutePath()+"\\veslid\\json files\\");
+        return path_json_files.toString()+"\\";
     }
 
     public String pathToTXTFile(){
 
-        return "c:\\Nazar\\Java\\Hobbit 4.txt";
-        //return "e:\\TextForAnalys2.txt";
+        //return "c:\\Nazar\\Java\\Hobbit 4.txt";
+        return "e:\\TextForAnalys2.txt";
         //return "e:\\Гобіт.txt";
 
     }
@@ -90,7 +104,6 @@ public class TextFileReadAndWriteServiceImpl implements TextFileReadAndWriteServ
         }
         catch (Exception e)
         { e.printStackTrace(); }
-        System.out.println("yuhu "+wordUniqueForm.getLanguage()+" "+wordUniqueForm.getFormOfWord()+" "+wordUniqueForm.getLinguisticCategoryForms().getLinguisticCategories().get(0));
     }
 
 }

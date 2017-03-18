@@ -33,10 +33,11 @@ public class LCForJSONImpl implements LCForJSON {
         }
     }
 
+
     public String getStringLCForJsonParserLcNounUkrainianFull(LcNounUkrainian lcNounUkrainian) {
         String stForJsonParser;
         int k = 0;
-        stForJsonParser = "\"" + "LcNounUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         stForJsonParser = stForJsonParser + "\"" + "singularOrPluralForm" + "\"" + ":" + "{";
         for (HashMap.Entry<Number, String> singularOrPluralForm : lcNounUkrainian.getSingularOrPluralForms().entrySet()) {
             stForJsonParser = stForJsonParser + "\"" + singularOrPluralForm.getKey().toString() + "\"" + ":" + "\"" + singularOrPluralForm.getValue() + "\"";
@@ -63,7 +64,7 @@ public class LCForJSONImpl implements LCForJSON {
 
     public String getStringLCForJsonParserLcNounUkrainian(LcNounUkrainian lcNounUkrainian) {
         String stForJsonParser;
-        stForJsonParser = "\"" + "LcNounUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         // here will be code for define all cases
         stForJsonParser = stForJsonParser + "}";
         return stForJsonParser;
@@ -71,7 +72,7 @@ public class LCForJSONImpl implements LCForJSON {
 
     public String getStringLCForJsonParserLcVerbUkrainian(LcVerbUkrainian lcVerbUkrainian) {
         String stForJsonParser;
-        stForJsonParser = "\"" + "LcVerbUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         // here will be code for define all cases
         stForJsonParser = stForJsonParser + "}";
         return stForJsonParser;
@@ -79,7 +80,7 @@ public class LCForJSONImpl implements LCForJSON {
 
     public String getStringLCForJsonParserLcAdverbUkrainian(LcAdverbUkrainian lcAdverbUkrainian) {
         String stForJsonParser;
-        stForJsonParser = "\"" + "LcAdverbUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         // here will be code for define all cases
         stForJsonParser = stForJsonParser + "}";
         return stForJsonParser;
@@ -87,7 +88,7 @@ public class LCForJSONImpl implements LCForJSON {
 
     public String getStringLCForJsonParserLcAdjectiveUkrainian(LcAdjectiveUkrainian lcAdjectiveUkrainian) {
         String stForJsonParser;
-        stForJsonParser = "\"" + "LcAdjectiveUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         // here will be code for define all cases
         stForJsonParser = stForJsonParser + "}";
         return stForJsonParser;
@@ -95,7 +96,7 @@ public class LCForJSONImpl implements LCForJSON {
 
     public String getStringLCForJsonParserLcPronounUkrainian(LcPronounUkrainian lcPronounUkrainian) {
         String stForJsonParser;
-        stForJsonParser = "\"" + "LcPronounUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         // here will be code for define all cases
         stForJsonParser = stForJsonParser + "}";
         return stForJsonParser;
@@ -103,7 +104,7 @@ public class LCForJSONImpl implements LCForJSON {
 
     public String getStringLCForJsonParserLcPrepositionUkrainian(LcPrepositionUkrainian lcPrepositionUkrainian) {
         String stForJsonParser;
-        stForJsonParser = "\"" + "LcPrepositionUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         // here will be code for define all cases
         stForJsonParser = stForJsonParser + "}";
         return stForJsonParser;
@@ -111,7 +112,7 @@ public class LCForJSONImpl implements LCForJSON {
 
     public String getStringLCForJsonParserLcConjunctionUkrainian(LcConjunctionUkrainian lcConjunctionUkrainian) {
         String stForJsonParser;
-        stForJsonParser = "\"" + "LcConjunctionUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         // here will be code for define all cases
         stForJsonParser = stForJsonParser + "}";
         return stForJsonParser;
@@ -119,7 +120,7 @@ public class LCForJSONImpl implements LCForJSON {
 
     public String getStringLCForJsonParserLcNumeralUkrainian(LcNumeralUkrainian lcNumeralUkrainian) {
         String stForJsonParser;
-        stForJsonParser = "\"" + "LcNumeralUkrainian" + "\"" + ":" + "{";
+        stForJsonParser = "\"" + "linguisticCategoryForms" + "\"" + ":" + "{";
         // here will be code for define all cases
         stForJsonParser = stForJsonParser + "}";
         return stForJsonParser;

@@ -1,7 +1,10 @@
 package pp.word;
-import pp.word.WordUniqueForm;
+import pp.linguisticCategories.Language;
+
+import java.util.List;
+import java.util.Map;
 
 public interface WordUniqueFormService {
-	// WordUniqueForm createOrFindWordUniqueForm(String wordUnique);
-	String firstXSystemOrthographyOfWord(WordUniqueForm wordUniqueForm);
+	String firstXSystemOrthographyOfWord(String word, Language language);
+	Map<WordUniqueForm,Integer> parsingTextIntoUniqueWords(List<String> textOfFileDivideOnListWords);
 }

@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 
-public interface TextFileDivideIntoWordsService {
+public interface TextFileDivideIntoWordsSentencesOrOthersPartsService {
 	List<String>  readTextFromStringAndDivideOnWordsList(String textInOneString);
+	List<String>  readTextFromStringAndDivideIntoSentencesList(String textInOneString);
 }

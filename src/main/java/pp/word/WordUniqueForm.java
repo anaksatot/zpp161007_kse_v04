@@ -7,36 +7,62 @@ import pp.xmlFileProcessing.XMLfileReadAndWriteServiceImpl;
 import java.io.Serializable;
 import java.util.Random;
 
-public class WordUniqueForm implements Serializable {
+import javax.persistence.*;
 
+@Entity
+@Table (name= "word_unique_form")
+public class WordUniqueForm implements Serializable {
+	@Id
+	@Column(name= "id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	@Column(name= "word")
 	private String formOfWord;
-	private String formOfWordFirstLetterCapital;
-	private String formOfWordInLowerCase;
-	private String formOfWordInCapitalCase;
-	private String formOfWordStrangeCaseOrder;
-	private int quantityOfSymbols;
+	@Transient private String formOfWordFirstLetterCapital;
+	@Transient private String formOfWordInLowerCase;
+	@Transient private String formOfWordInCapitalCase;
+	@Transient private String formOfWordStrangeCaseOrder;
+	@Column(name= "quantity_symbols")
+	private Integer quantityOfSymbols;
+	@Column(name= "formOfWordXIVsystem")
+	private String formOfWordXIVsystem;
 	private String uniqueIndex;
-	private Language language;
-	private LinguisticCategoryForms linguisticCategoryForms;
-	private static Integer accountOfWordsCurrentText;
+	@Transient private Language language;
+	@Transient private LinguisticCategoryForms linguisticCategoryForms;
+	private static Integer accountOfWords;
+	private Integer accountWordsOfThisUniqueForm;
 
 	static {
-		accountOfWordsCurrentText = XMLfileReadAndWriteServiceImpl.readFromXMLStatisticInformation().get("totalAccountOfWords");
+		accountOfWords = XMLfileReadAndWriteServiceImpl.readFromXMLStatisticInformation().get("totalAccountOfWords");
 	}
 	public WordUniqueForm(String formOfWord,Language language) {
+		System.out.println("oh "+formOfWord);
 		this.formOfWord = formOfWord.toLowerCase();
+		System.out.println("ixc "+this.formOfWord);
 		this.language = language;
 		this.quantityOfSymbols = formOfWord.length();
 		this.uniqueIndex = defineRandomUniqueIndex(10);
+		this.accountWordsOfThisUniqueForm = 1;
 		checkAndWriteFormsWithCapitalAndLowerLetters(formOfWord);
-		++accountOfWordsCurrentText;
+		this.formOfWordXIVsystem = new WordUniqueFormUkrainianServiceImpl().firstXSystemOrthographyOfWord(formOfWord, language);
+		System.out.println("xcixc "+this.formOfWordXIVsystem);
+		++accountOfWords;
+		//this.id = accountOfWords+60;
+	}
+
+	public WordUniqueForm() {
+		++accountOfWords;
+	}
+
+	public int getId() {
+		return id;
 	}
 
 	public String getFormOfWord() {
 		return formOfWord;
 	}
 
-	public int getQuantiySymbols() {
+	public int getQuantitySymbols() {
 		return quantityOfSymbols;
 	}
 
@@ -46,6 +72,14 @@ public class WordUniqueForm implements Serializable {
 
 	public Language getLanguage() {
 		return language;
+	}
+
+	public Integer getAccountWordsOfThisUniqueForm() {
+		return accountWordsOfThisUniqueForm;
+	}
+
+	public String getFormOfWordXIVsystem() {
+		return formOfWordXIVsystem;
 	}
 
 	public void setLinguisticCategoryForms(LinguisticCategoryForms linguisticCategoryForms) {
@@ -70,7 +104,7 @@ public class WordUniqueForm implements Serializable {
 	}
 
 	public static Integer getAccountOfWords() {
-		return accountOfWordsCurrentText;
+		return accountOfWords;
 	}
 
 	public LinguisticCategoryForms getLinguisticCategoryForms() {
@@ -107,6 +141,10 @@ public class WordUniqueForm implements Serializable {
 
 	public void setFormOfWordStrangeCaseOrder(String word) {
 		this.formOfWordStrangeCaseOrder = word;
+	}
+
+	public void setAccountWordsOfThisUniqueForm(Integer accountWordsOfThisUniqueForm) {
+		this.accountWordsOfThisUniqueForm = accountWordsOfThisUniqueForm;
 	}
 
 	public boolean isEmptyFormOfWordFirstLetterCapital() {
